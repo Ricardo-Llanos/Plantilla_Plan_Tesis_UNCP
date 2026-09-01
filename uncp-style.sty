@@ -1,0 +1,244 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{uncp-style}[2026/05/26 Custom Rules for UNCP Plan de Tesis]
+
+% --- REQUERIMIENTOS ESPECÍFICOS DE FORMATO ---
+\RequirePackage{titlesec}        % Estructura de secciones
+\RequirePackage{caption}         % Leyendas de tablas y figuras
+\RequirePackage[titles]{tocloft} % Control fino del índice sin romper estilos de títulos
+\RequirePackage[hidelinks]{hyperref} % Genera enlaces clicables en el PDF
+\RequirePackage{indentfirst}     % Fuerza la sangría en los primeros párrafos
+\RequirePackage{setspace}        % Manejo de interlineados
+\RequirePackage{changepage}
+
+% --- CONTADOR DE SECCIONES CORRELATIVAS ---
+\setcounter{secnumdepth}{3} % Asegura numeración hasta \subsubsection
+
+% Sincronizar contador de Secciones al del capítulo (Formato 3.1, 3.1.1)
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% Numeración correlativa de tablas y figuras sin decimales a lo largo de todo el documento
+\RequirePackage{chngcntr}
+\counterwithout{table}{chapter}
+\renewcommand{\thetable}{\arabic{table}}
+\counterwithout{figure}{chapter}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+% --- REDUCCIÓN DE SANGRÍAS EN ÍNDICE ---
+\cftsetindents{section}{0.5cm}{1.0cm}
+\cftsetindents{subsection}{1.0cm}{1.4cm}
+\cftsetindents{subsubsection}{1.5cm}{1.8cm}
+
+\setlength{\cftbeforechapskip}{0.3cm}
+\setlength{\cftbeforesecskip}{0.1cm}
+
+% --- CONFIGURACIÓN DE PREFIJOS EN FILAS DE TABLAS Y FIGURAS ---
+\renewcommand{\cfttabpresnum}{\textbf{Tabla }}     
+\renewcommand{\cfttabaftersnum}{.}                
+\setlength{\cfttabnumwidth}{1.8cm}                 
+
+\renewcommand{\cftfigpresnum}{\textbf{Figura }}    
+\renewcommand{\cftfigaftersnum}{.}                
+\setlength{\cftfignumwidth}{1.8cm}                 
+
+% --- RE-DEFINICIÓN NATIVA DE CAPÍTULOS CONTINUOS ---
+\makeatletter
+\renewcommand\chapter{\par
+  \thispagestyle{plain}
+  \global\@topnum\z@
+  \secdef\@chapter\@schapter}
+
+\def\@chapter[#1]#2{%
+  \ifnum \c@secnumdepth >\m@ne
+    \refstepcounter{chapter}%
+    \setcounter{section}{0}% Reinicia secciones en cada hito romano
+    \addcontentsline{toc}{chapter}{\Roman{chapter}.\quad \MakeUppercase{#2}}
+  \else
+    \addcontentsline{toc}{chapter}{\MakeUppercase{#2}}
+  \fi
+  \chaptermark{#1}%
+  \@makechapterhead{#2}%
+  \@afterheading
+}
+\makeatother
+
+% =========================================================================
+% --- CONFIGURACIÓN DE TÍTULOS Y TEXTO CON SANGRÍA JERÁRQUICA ---
+% =========================================================================
+
+% =========================================================================
+% --- MOTOR DE SANGRADO EN CASCADA AUTOMÁTICO (MÁRGENES ACUMULATIVOS) ---
+% =========================================================================
+
+% --- CAPÍTULOS (HITOS ROMANOS): Nivel Base (Margen izquierdo 0cm) ---
+\titleformat{\chapter}[hang]
+  {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+  {\Roman{chapter}.\quad} 
+  {0pt} 
+  {\MakeUppercase} 
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{0pt}
+
+
+% --- SECCIONES: Desplaza TODO el bloque (Título y Texto) 0.6cm a la derecha ---
+\titleformat{\section}[hang]
+  {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+  {\thesection\quad}
+  {0pt}
+  {}
+% {0.6cm} desplaza el título de la sección
+\titlespacing*{\section}{0.6cm}{2.3ex plus .2ex}{0pt}
+% Entorno para el texto de la subsubsección (Mueve todo el contenido 1.0cm)
+\newenvironment{sectext}{
+    \begin{adjustwidth}{0.6cm}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parindent}{1.5cm}
+    \hspace*{\parindent}
+}{
+    \end{adjustwidth}
+    \vspace{-0.25cm}
+}
+
+% --- SUBSECCIONES: Desplaza TODO el bloque un nivel más (1.2cm totales) ---
+\titleformat{\subsection}[hang]
+  {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+  {\thesubsection\quad}
+  {0pt}
+  {}
+% El título se alinea al nuevo margen de la subsección
+\titlespacing*{\subsection}{1.2cm}{2.3ex plus .2ex}{0pt}
+
+\newenvironment{subsectext}{
+    \begin{adjustwidth}{1.2cm}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parindent}{1.5cm} % Mantiene la sangría del primer párrafo dentro del bloque
+    \hspace*{\parindent}
+}{
+    \end{adjustwidth}
+    \vspace{-0.25cm}
+}
+
+% --- SUBSUBSECCIONES: Desplaza TODO el bloque un nivel más (1.8cm totales) ---
+\titleformat{\subsubsection}[hang]
+  {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+  {\thesubsubsection\quad}
+  {0pt}
+  {}
+\titlespacing*{\subsubsection}{1.8cm}{1.5ex plus 0.4ex minus .2ex}{0pt}
+% Entorno para el texto de la subsubsección (Mueve todo el contenido 1.0cm)
+\newenvironment{subsubsectext}{
+    \begin{adjustwidth}{1.8cm}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parindent}{1.5cm}
+    \hspace*{\parindent}
+}{
+    \end{adjustwidth}
+    \vspace{-0.25cm}
+}
+
+% =========================================================================
+% --- CONTROL DE SEPARACIÓN EN LISTAS (ITEMIZE) DENTRO DE LOS ENTORNOS ---
+% =========================================================================
+\RequirePackage{enumitem}
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=2pt}
+
+% =========================================================================
+% --- CONFIGURACIÓN GLOBAL FORZADA DE SANGRÍAS (MÁXIMA PRIORIDAD) ---
+% =========================================================================
+\setstretch{1.5}              
+\setlength{\parindent}{1.5cm} % Sangría de primera línea fija de 1.5cm
+\setlength{\parskip}{0pt}     
+
+\makeatletter
+\def\@afterheading{\@afterindenttrue} % Asegura que el primer párrafo post-título siempre tenga su sangría
+\makeatother
+% % --- CAPÍTULOS (HITOS ROMANOS): Nivel 0 (Margen izquierdo base 0cm) ---
+% \titleformat{\chapter}[hang]
+%   {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+%   {\Roman{chapter}.\quad} 
+%   {0pt} 
+%   {\MakeUppercase} 
+% \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{10pt}
+
+% % --- SECCIONES: Nivel 1 (Margen izquierdo base 0cm) ---
+% \titleformat{\section}[hang]
+%   {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+%   {\thesection.\quad}
+%   {0pt}
+%   {}
+% \titlespacing*{\section}{0.5cm}{3.5ex plus 1ex minus .2ex}{6pt}
+
+
+% % --- SUBSECCIONES: Nivel 2 (Desplazamiento horizontal general de 0.6cm) ---
+% \titleformat{\subsection}[hang]
+%   {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright} % Alinea el título al sub-margen
+%   {\thesubsection\quad}
+%   {0pt}
+%   {}
+% % {0.6cm} es el espacio del escalón hacia la derecha. {0.5cm} de separación con el texto.
+% \titlespacing*{\subsection}{1.0cm}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+% % --- SUBSUBSECCIONES: Nivel 3 (Desplazamiento horizontal general de 1.2cm) ---
+% \titleformat{\subsubsection}[hang]
+%   {\normalfont\fontsize{11pt}{13pt}\selectfont\bfseries\raggedright}
+%   {\thesubsubsection\quad}
+%   {0pt}
+%   {}
+% % {1.2cm} es el doble de escalonamiento. {0.5cm} de separación horizontal con el texto.
+% \titlespacing*{\subsubsection}{1.5cm}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% --- FORMATO DE LEYENDAS (Figuras y Tablas) ---
+\captionsetup[figure]{
+    labelfont={bf,small},         
+    textfont={it,small},  
+    labelsep=newline,             
+    justification=raggedright,    
+    singlelinecheck=false,
+    position=top
+}
+
+\captionsetup[table]{
+    labelfont={bf,small},         
+    textfont={it,small},  
+    labelsep=newline,             
+    justification=raggedright,    
+    singlelinecheck=false,
+    position=top
+}
+
+% --- AUTOMATIZACIÓN DE ENTORNO FLOATING CON [H] COMPACTO POR DEFECTO ---
+\makeatletter
+\renewenvironment{table}[1][H] 
+  {\@float{table}[#1]\singlespacing\fontsize{10pt}{12pt}\selectfont}
+  {\end@float}
+
+\renewenvironment{figure}[1][H]
+  {\@float{figure}[#1]\singlespacing\fontsize{10pt}{12pt}\selectfont}
+  {\end@float}
+\makeatother
+
+% --- ENTORNO EXCLUSIVO PARA NOTAS DE TABLAS/FIGURAS ---
+\newenvironment{notatabla}{
+    \par\vspace{0.2cm}
+    \justifying
+    \fontsize{9pt}{11pt}\selectfont 
+}{
+    \par
+}
+
+% =========================================================================
+% --- CONFIGURACIÓN GLOBAL FORZADA DE SANGRÍAS (MÁXIMA PRIORIDAD) ---
+% =========================================================================
+\setstretch{1.5}              
+\setlength{\parindent}{1.5cm} % Cada párrafo iniciará con sus 1.5cm respecto a su margen activo
+\setlength{\parskip}{0pt}     
+
+\makeatletter
+\def\@afterheading{\@afterindenttrue} % Anula el bloqueo de primera sangría de LaTeX
+\makeatother
+
+\endinput
