@@ -5,13 +5,12 @@
 
 % ----- DATOS DEL PLAN DE TESIS -----
 \faculty{Ingeniería de Sistemas}
-\thesistitle{Sistema Inteligente de Alertas Climáticas mediante SCRUM para la mejora de la cultura organizacional en la EPS-Selva Central - Huancayo - 2026}
-\addauthor{Llanos Lozano Ricardo Alexander}
-\addauthor{Yauri Torres Benjamin Raúl}
+\thesistitle{Solución + Metodología + Problema + Contexto + Tiempo: SISTEMA DE INFORMACIÓN BASADO EN SCRUM/XP PARA LA TOMA DE DECISIONES EN XYZ-HYO, 2026}
+\addauthor{Apellido Apellido_1}{Nombre Nombre_1}
+% \addauthor{Apellido Apellido_2}{Nombre Nombre_2} % Quitar el comentario si se desea agregar más autores
 \degree{Ingeniero de Sistemas}
 \city{Huancayo}
 \thesisyear{2026}
-\advisor{Mg. / Dr. Advisor Full Name}
 
 \begin{document}
 
@@ -29,797 +28,554 @@
 \setcounter{page}{1}
 
 \chapter{Línea de Investigación}
-Inteligencia Artificial y automatización
 
-\chapter{Título}
-Desarrollo de una pantalla volumétrica para la visualización anatómica de columna lumbar
-
-\chapter{Asesor}
-Dra. Conny Pamela Samaniego Flores
-
-\chapter{Planteamiento del Problema}
-
-Para iniciar, se contextualizará por qué el trabajo considera al desarrollo de una pantalla volumétrica para su utilización en la visualización anatómica de columna lumbar como un paso fundamental en romper las brechas de visualización bidimensional arraigadas en la fase pre-operatoria y de diagnóstico.
-
-\section{Entrenamiento de las habilidades quirúrgicas y planificación pre-operatoria}
-    \begin{sectext}
-        Las habilidades quirúrgicas necesarias para llevar a cabo una intervención requieren de un proceso de aprendizaje predominantemente empírico, pero este mismo motivo hace que sea complicado llevar a cabo este proceso; el entrenamiento quirúrgico tradicional supone riesgos para con el paciente, lo cual, sumado a la disminución de la tolerancia a los errores del personal sanitario, las restrictivas horas de trabajo y las necesidades quirúrgicas cada vez más especializadas \parencite{calle-diaz_metodologias_2021,kasano_simulacion_2018} suponen notorias desventajas en la formación. Ante ello, las técnicas de simulación quirúrgica constituyen una manera efectiva de superar estas limitaciones. Al hablar de simulaciones quirúrgicas nos referimos al proceso mediante el cual emulamos un entorno clínico real, bajo condiciones controladas a través de un proceso guiado \parencite{calle-diaz_metodologias_2021}. Dada la naturaleza inherente del instrumento, la puesta en acción de una práctica deliberada --continua y rigurosa hacia la adquisición de capacidades--, considerada como un predictor de experticie incluso mayor al académico \parencite{ericsson_influence_2006}, es éticamente correcto y  pedagógicamente un acierto.
-
-        Las simulaciones no buscan reemplazar al ambiente real, sino en ser una herramienta complementaria en la enseñanza y evaluación de la medicina tradicional; considerando su uso como una antesala \parencite{kasano_simulacion_2018}. La recreación de los escenarios clínicos requiere del uso de equipo especializado como materiales, insumos u simuladores --programas, maniquís--, siendo el caso de este último el que ha mostrado la importancia de las ingenierías al desarrollo de simuladores cada vez más especializados. Existe una variedad de simuladores que aprovechan las tecnologías 3D por medio de la realidad virtual, su uso se deriva de la gran capacidad de inmersión que estas proveen sumado a las grandes avances en las tecnologías de reconstrucción tridimensional para las estructuras anatómicas \parencite{sarmah_survey_2023}. La literatura nos confirma que esta clase de simuladores son el método que más prefieren los estudiantes como método de enseñanza \parencite{calle-diaz_metodologias_2021}, lo cual confirma las observaciones de \textcite{kasano_simulacion_2018}, donde la tendencia actual se encuentra en la incorporación de software de tercera y cuarta generación, los cuales incluyan sensación, percepción táctil, auditiva y visual.
-
-        Si bien diversos estudios destacaron y evidenciaron la efectividad de las simulaciones al desarrollo profesional en diversas áreas y competencias del ambiente clínico, la necesidad de las simulaciones no se encuentra solo en el entrenamiento de habilidades quirúrgicas, sino también en una necesidad esencial en la planificación pre-operatoria \parencite{calle-diaz_metodologias_2021}. A su vez, aunque las simulaciones mediante realidad virtual tengan resultados favorables de cara a la percepción de los estudiantes, aún no existen estudios suficientes que garanticen el logro de las simulaciones en tiempo real y con el realismo adecuado. 
-    \end{sectext}
-
-\section{Patologías Lumbares}
-    \begin{sectext}
-Las afecciones relacionadas a la región lumbar son diversas, siendo la más predominante la lumbalgia, esta representa una verdadera crisis de salud global y la principal causa de discapacidad en todo el mundo \parencite{noauthor_lumbalgia_2023}. En el año 2020, este padecimiento afectó a 619 millones de personas, generando una enorme carga económica y social para los sistemas de salud pública debido a la pérdida de productividad, el ausentismo laboral y las incapacidades recurrentes. Aunque una gran proporción de los casos son de carácter inespecífico, las patologías de origen mecánico-degenerativo —como la hernia discal, la espondilolistesis y la estenosis espinal— agrupan la mayoría de las causas anatómicas identificables \parencite{ojeda_gonzalez_dolor_2022}. En situaciones donde estas patologías producen déficits neurológicos severos o no responden a los tratamientos conservadores, la intervención quirúrgica se vuelve indispensable \parencite{sassack_anatomy_2023}.
-
-La necesidad de una simulación y planificación quirúrgica exhaustiva radica en la alta complejidad anatómica de la columna lumbar. Esta región, compuesta por cinco vértebras (L1 a L5), discos intervertebrales y un fuerte sistema ligamentario, está diseñada para soportar las fuerzas axiales del tren superior y permitir una diversidad de movimientos troncales \parencite{sassack_anatomy_2023}. Sin embargo, la intervención en esta zona es sumamente delicada debido a que las estructuras óseas y articulares conviven en un espacio muy reducido con elementos neurológicos vitales. La médula espinal termina típicamente a nivel de las vértebras L1-L2, dando paso a la cauda equina (cola de caballo) y a múltiples raíces nerviosas que discurren por el canal espinal y emergen a través de estrechos agujeros de conjunción \parencite{sassack_anatomy_2023}.
-
-Durante procedimientos como la descompresión lumbar, laminectomías o fusiones espinales, el cirujano debe navegar este intrincado entorno donde el margen de error es mínimo. El abordaje quirúrgico tradicional, ya sea posterior o intersomático, expone al paciente a riesgos significativos, incluyendo posibles lesiones iatrogénicas en la musculatura paraspinal, tracciones en las raíces nerviosas y daños al saco tecal \parencite{sassack_anatomy_2023}.
-
-Ante esta vulnerabilidad anatómica, la evaluación pre-operatoria de pacientes con indicación quirúrgica depende críticamente de estudios de imagenología avanzada. La Tomografía Axial Computarizada (TAC) y la Resonancia Magnética Nuclear (RMN) son las técnicas de elección, ya que permiten valorar en múltiples planos la arquitectura tridimensional de la columna, observar el diámetro del canal espinal y evaluar tanto los componentes óseos como las partes blandas afectadas \parencite{clayton_lumbalgia_2023}.
-
-A pesar de que los estudios como la TAC y la RMN capturan a la perfección la complejidad espacial y volumétrica de las patologías lumbares, los especialistas hoy en día se ven obligados a visualizar y planificar sobre estas imágenes a través de pantallas planas bidimensionales (2D) convencionales. Esta limitante tecnológica impone una altísima carga cognitiva sobre el cirujano, quien debe reconstruir mentalmente la profundidad y la relación espacial de estructuras milimétricas antes de la incisión \parencite{chessa_three-dimensional_2022}.
-\end{sectext}
-
-\section{Visualización Volumétrica}
-\begin{sectext}
-Historicamente, el interés por el desarrollo de dispositivos capaces de dotar a las imágenes de una perspectiva tridimensional real comprende más de un siglo \parencite{salazar_zegarra_taxonomitecnicas_2022, blundell_uncertain_2017}, pero a pesar de este esfuerzo, ningún cuadro volumétrico ha logrado una adopción u éxito significativo; en sus inicios, esto podía ser asociado a la falta de tecnologías capaces de cumplir con los requisitos mínimos viables para la realización de esta clase de productos, pero en la actualidad, el hardware es cada vez más especializado, con el rendimiento suficiente para cumplir con los requerimientos necesarios, aunque manteniendo aún algunos problemas propias de las arquitecturas volumétricas (Tabla.~\ref{tab:atributos-negativos-pantallas}). 
-
-\begin{table}[!ht]
-    % \centering
-    \small % Un punto menos ayuda a la legibilidad en tablas densas
-    \renewcommand{\arraystretch}{1} % Espacio equilibrado entre filas
-    
-    \caption{Atributos negativos frecuentemente asociados con las arquitecturas de pantallas volumétricas.}
-    \label{tab:atributos-negativos-pantallas}
-
-    % Usamos tabularx para que la tabla se ajuste exactamente al ancho de página
-    \begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries}p{3.5cm} X X @{}}
-        \toprule
-        \textbf{Atributo} & \textbf{Posible impacto} & \textbf{Causa ejemplar} \\ 
-        \midrule
-        Dimensiones limitadas y no escalables & Afecta la claridad espacial y distancia de visualización, impactando las aplicaciones. & Formación del espacio mediante el movimiento de traslación de una superficie. \\
-        \addlinespace[0.3cm]
-        
-        Alta densidad de materiales (volumen estático) %\parencite{PRETORIUS201113}% 
-        & Refracción en los límites (distorsión) y problemas de portabilidad. & Sólidos o líquidos (ej. vidrios de fluoruro dopados con lantánidos). \\
-        \addlinespace[0.3cm]
-        
-        Limitaciones en la visibilidad (ventana única) %\parencite{LEV2002427}% 
-        & Afecta el uso multiusuario y conduce a la agrupación de espectadores. & Uso de pilas de paneles de cristal líquido o fotocrómicos. \\
-        \addlinespace[0.3cm]
-        
-        Interferencia en la propagación rectilínea %\parencite{denotter_hounsfield_2026} %
-        & Variaciones en la calidad según la posición de visualización; direcciones preferenciales. & Uso de una matriz 3D de centros de generación de vóxeles. \\
-        \addlinespace[0.3cm]
-        
-        Zonas Muertas (atributos bajo el umbral) & Limita la ubicación de componentes, afectando la dinámica y previsibilidad. & Movimiento de rotación de una pantalla plana o helicoidal. \\
-        \addlinespace[0.3cm]
-        
-        Variaciones en atributos de los vóxeles & Calidad inconstante según la posición de visualización. & Movimiento de rotación o activación en la intersección de dos haces dirigidos. \\
-        \addlinespace[0.3cm]
-        
-        Baja eficiencia de barrido & Aparato de visualización grande en relación al tamaño del espacio de imagen. & Esfuerzos para mejorar posicionamiento y variaciones de atributos. \\
-        \addlinespace[0.3cm]
-        
-        Bajo brillo de los vóxeles & Reduce la idoneidad bajo condiciones de iluminación ambiental fuertes. & Excitación de dos pasos en medio gaseoso a baja presión. \\
-        \bottomrule
-    \end{tabularx}
-    
-    \noindent{\footnotesize{\textit{Nota.} Adaptado a partir de \parencite{blundell_uncertain_2017}}}
-\end{table}
-
-
-Según la literatura, esto es debido a un efecto ``bottom-up``, en el cual se prestó atención al desarrollo de la tecnología, pero no a su utilización u beneficios para con el consumidor \parencite{blundell_uncertain_2017}. En primera instancia, podríamos clasificar estos dispositivos en 2 grupos muy marcados: Pantallas estereoscópicas y autoestereoscópicas \parencite{salazar_zegarra_taxonomitecnicas_2022}. 
-
-Las pantallas estereoscópicas son dispositivos los cuales utilizan 2 vistas bidimensionales, afectando la perspectiva que tenemos respecto a la visualización. Entre los métodos principales encontramos: Por segmentación de color, por selección de polarización, por selección de tiempo \parencite{salazar_zegarra_taxonomitecnicas_2022}. Si bien estos métodos logran generar una perspectiva tridimensional, la proyección no genera ubicaciones reales en un plano volumétrico, por lo que solo es posible usar este tipo de dispositivos por medio de equipamiento adicional --gafas--. Por parte de las pantallas autoestereoscópica, su mayor virtud reside en no necesitar ningún aditamento adicional para su visualización. Estos dispositivos permiten una visualización tridimensional de 360º, por lo que muchos espectadores pueden visualizar la estructura simultáneamente; a su vez, también permite una inmersión tridimensional real al posicionar físicamente cada vóxel --unidad mínima de un objeto 3d-- dentro de un volumen \parencite{blundell_classification_2002,salazar_zegarra_taxonomitecnicas_2022}. Para producir una imagen volumétrica, es necesario de la utilización de una pantalla volumétrica --dispositivo autoestereoscópico--. Existen diversas formas de llevar a cabo una pantalla volumétrica, las cuales se explicarán a continuación.
+    Líneas de Investigación:
 
     \begin{figure}[H]
-        % \centering
+        \centering
     %\isPreprints{\centering}{} % Only used for preprints
-        \caption{Clasificación de Pantallas volumétricas. 
-        \label{fig-taxonomia-pantallas-volumetricas}}    
+        \caption{Líneas de Investigación. 
+        \label{fig-lineas-investigacion}}    
         
-        \includegraphics[width=17.0 cm]{src/imgs/Taxonomía de pantallas volumétricas.png}
+        \includegraphics[width=15.0 cm]{src/files/Líneas_de_Investigación.pdf}
 
         \vspace{0.1cm}
-        \small Elaborado a partir de \cite{salazar_zegarra_taxonomitecnicas_2022}
+        \small Elaborado a partir de ...
     \end{figure}
 
-Dentro de todos los tipos de pantallas volumétricas, la que se maneja en el estudio es la Pantalla de volumen de barrido rotacional. Las Pantallas de Volumen de Barrido u Swept Volumen Display, son dispositivos que no posicionan física u estáticamente los vóxeles en todo el volumen, al contrario, estas pantallas, por medio de un movimiento mecánico --traslacional u rotacional-- , posicionan cada vóxel al``barrer`` el volumen. Este fenómeno solo es posible si se realiza a una velocidad tal que la propia persistencia de la visión genera que el conjunto limitado de vóxeles se observe como un conjunto completo respecto al volumen.
+\chapter{Título}
+    Título de la Investigación
 
-Si bien generar representaciones volumétricas de líneas, curvas o incluso imágenes simples son algo que muchos sistemas han demostrado, la representación de imágenes complejas: animadas u a color, sigue siendo un reto para los sistemas volumétricos.
+\chapter{Asesor}
+    Dra. ...
 
-Por su parte, el ámbito médico posee diversos métodos de recolección de datos volumétricos de alta calidad: Tomografías computarizadas (TC), Resonancias Magnéticas por Imágenes (MRI) o la Angiografía Rotacional 3D. Estos métodos permiten a los doctores la generación de un concepto mental de la anatomía del paciente, pero todos los mencionados recaen en el mismo problema: Limitación a la bidimensionalidad de las pantallas 2D, lo que afecta considerablemente a la relación 3D entre anatomía y patología \parencite{chessa_three-dimensional_2022}.\newline
+\chapter{Planteamiento del Problema}
+    El planteamiento del problema debe ser dividido en base a:
 
-\end{sectext}
-El presente trabajo se fundamenta bajo una realidad de múltiples problemas. Por su parte, el entrenamiento de las habilidades quirúrgicas y la planificación pre-operatoria se ve limitada por la falta de escenarios realistas que permitan llevar a cabo un análisis y prácticas adecuadas sin transgredir las normas éticas para con los pacientes; desde otra perspectiva, la columna lumbar, dada su gran importancia, complejidad anatómica y alta prevalencia de patologías, se consolida como una región que requiere de un profundo análisis pre-operatorio; y las pantallas volumétricas, que permiten la visualización volumétrica de la realidad, requieren de un entorno adecuado para poder explotar las bondades que esta clase de tecnologías proveen a los usuarios. Todo ello sugiere que la investigación se centra en solucionar múltiples problemas, de ámbitos específicos, a partir de problemas en otros ámbitos. Establecer a las pantallas volumétricas como una solución a la carencia de simuladores adecuados para el entrenamiento de habilidades quirúrgicas y planificación pre-operatoria, solucionará los problemas de ambos ámbitos, y a su vez, contribuirá a solucionar el problema del análisis profundo de las patologías lumbares.
+    \begin{itemize}
+        \item \textbf{Descripción u contexto:} 3 u 4 líneas
+        \item \textbf{Macrocontexto:} 1.5 páginas (Contexto más general - puedes verlo como el nivel mundial,  aunque no simboliza ello)
+        \item \textbf{Mesocontexto:} 2 páginas (Contexto algo más específico - Podrías verlo como un contexto nacional u regional, aunque no simboliza ello)
+        \item \textbf{Microcontexto:} 2.5 páginas (Contexto totalmente específico y exacto del tema - Podrías verlo como un contexto directo de tu tema, en la institución o demás)
+        \item \textbf{Párrafo conclusivo del problema} (remembranza del planteamiento y una conclusión del mismo) ⇒ establece la naturaleza y la dimensión del problema, así como la importancia de la solución
+    \end{itemize}
+
+    \textbf{Párrafo de contexto del trabajo}. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit. 
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Una investigación nunca termina, solo se ve limitada por nosotroso
+        \label{fig-contexto-investigacion}}    
+                
+        \includegraphics[width=6.0 cm]{src/imgs/nivel-contexto-investigacion.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+% --- RELLENAR ---
+ % Los paréntesis en las secciones deben ser eliminados
+\section{Primera sección (Macrocontexto)}
+    \begin{sectext}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit. 
+
+        \begin{table}[!ht]
+            % \centering
+            \small % Un punto menos ayuda a la legibilidad en tablas densas
+            \renewcommand{\arraystretch}{1} % Espacio equilibrado entre filas
+            
+            \caption{Atributos negativos frecuentemente asociados con las arquitecturas de pantallas volumétricas.}
+            \label{tab:atributos-negativos-pantallas}
+
+            % Usamos tabularx para que la tabla se ajuste exactamente al ancho de página
+            \begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries}p{3.5cm} X X @{}}
+                \toprule
+                \textbf{First Header} & \textbf{Second Header} & \textbf{Third Header} \\ 
+                \midrule
+                First Part & Second Part & Third Part \\
+                \addlinespace[0.3cm]
+                
+                First Part & Second Part & Third Part \\
+                \addlinespace[0.3cm]
+                
+                First Part & Second Part & Third Part \\
+                \bottomrule
+            \end{tabularx}
+            
+            \noindent{
+                \footnotesize{
+                    \textit{Nota.} Adaptado a partir de ...
+                }
+            }
+    \end{table}
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit.
+    
+    \end{sectext}
+
+\section{Segunda sección - Mesocontexto}
+    \begin{sectext}
+        \begin{figure}[H]
+            \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+            \caption{Logo UNCP. 
+            \label{fig-uncp-logo}}    
+            
+            \includegraphics[width=5.0 cm]{src/imgs/logo_uncp.png}
+
+            \vspace{0.1cm}
+            \small Elaborado a partir de ...
+        \end{figure}
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit.
+        \newline
+
+    \end{sectext}
+
+
+\section{Tercera sección - Microcontexto}
+    \begin{sectext}
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit.
+    \newline
+
+    \end{sectext}
+
+
+\textbf{Párrafo conclusivo del planteamiento del problema.} Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit.
+
+% -- SEGUNDO CAPÍTULO --
 \chapter{Formulación del Problema}
+        \begin{table}[!ht]
+            % \centering
+            \small % Un punto menos ayuda a la legibilidad en tablas densas
+            \renewcommand{\arraystretch}{1} % Espacio equilibrado entre filas
+            
+            \caption{Simbologia utilizada para los problemas }
+            \label{tab:atributos-negativos-pantallas}
+
+            % Usamos tabularx para que la tabla se ajuste exactamente al ancho de página
+            \begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries}p{2.0cm} X @{}}
+                \toprule
+                \textbf{Símbolo} & \textbf{Significado} \\ 
+                \midrule
+                VD & Variable Dependiente \\
+                \addlinespace[0.3cm]
+                
+                VI & Variable Independiente \\
+                \addlinespace[0.3cm]
+                                
+                M & Metodología \\
+                \addlinespace[0.3cm]
+
+                C & Contexto \\
+                \addlinespace[0.3cm]
+                
+                T & Tiempo \\
+                \addlinespace[0.3cm]
+
+                f & función (matemática) \\
+                \bottomrule
+            \end{tabularx}
+            
+            \noindent{
+                \footnotesize{
+                    \textit{Nota.} Adaptado a partir de ...
+                }
+            }
+    \end{table}
+
 \section{Problema General}
-\begin{sectext}
-        ¿De qué manera el sistema de visualización volumétrica, basado en la Matriz de Trazabilidad de Requerimientos realizada en el TRL 3, incide en la planificación y análisis pre-operatorio de patologías lumbares?
-\end{sectext}
+    \begin{sectext}
+        ¿Cómo influye la VI en la VD en el C y T establecido?
+
+        ¿Qué relación existe entre la implementación de VI + M y la VD en C y T?
+
+        ¿De qué modo la VI + M afecta  a la VD en el C y T establecido?
+
+        \textbf{¿Cómo influye la implementación de un sistema de información basado en SCRUM/XP en la toma de decisiones de en la empresa XYZ-Hyo - 2026?}
+    \end{sectext}
 
 \section{Problemas Específicos}
-\begin{sectext}
-    \begin{itemize}
-        \item ¿De qué manera las métricas establecidas en la Matriz de Trazabilidad de Requerimientos permiten la realización de una pantalla volumétrica de barrido rotacional?
+    \begin{sectext}
+        \textbf{2 o 3 a lo máximo}
 
-        \item ¿De qué manera las métricas establecidas en la Matriz de Trazabilidad de Requerimientos permite la recreación tridimensional de pruebas TC de columna lumbar?
-    \end{itemize}
-\end{sectext}
+        \begin{itemize}
+            \item ¿Cómo influye la disponibilidad de  información en la toma de decisiones en la empresa xyz -hyo, 2026
+
+            \item ¿Cómo influye la calidad de información en la toma de decisiones en la empresa xyz-hyo, 2026?
+        \end{itemize}
+    \end{sectext}
 
 \chapter{Objetivos de la Investigación}
 \section{Objetivo General}
-\begin{sectext}
-        Validar que el sistema de visualización volumétrica permite la planificación y análisis pre-operatorio de patologías lumbares.
-\end{sectext}
+    \begin{sectext}
+            Determinar la influencia de la VI en la VD en el C y T
+
+            \textbf{Determinar la influencia de la implementación de un sistema de información basado en scrum/xp en la toma de decisiones en el contexto y tiempo establecidos.}
+    \end{sectext}
 
 \section{Objetivos Específicos}
-\begin{sectext}
-        \begin{itemize}
-            \item Determinar la influencia de las métricas establecidas en la MTR permiten la creación de una pantalla volumétrica de barrido rotacional.
+    \begin{sectext}
+        \textbf{Debe ser la misma cantidad que problemas}
+            \begin{itemize}
+                \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio.
 
-            \item Determinar la influencia de las métricas establecidas en la MTR permite la recreación tridimensional de columna lumbar por medio de TCs.
-        \end{itemize}
-\end{sectext}
+                \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta.
+            \end{itemize}
+    \end{sectext}
 
-\chapter{Marco de Referencia}   
+\chapter{Marco de Referencia}
+Se define como el basamento teórico y experimental. Este ayuda a entender mejor el problema, la metodolgía y la solución
+
 \section{Antecedentes}
 \begin{sectext}
+    Los antecedentes pueden desprenderse en 2 tipos:
+
+    \begin{itemize}
+        \item \textbf{Antecedentes del problema:} ¿Desde cuándo está presente tu problema?
+        \item \textbf{Antecedentes de la investigación:} ¿Quiénes otros han estudiado ese problema?
+    \end{itemize}
+
+    \newline En la sección de antecedentes de las tesis nos referimos a los antecedentes de investigación. (Otros trabajos que ya han sido realizados). Estos tienen relación con el tema: Variables dependiente, independiente u la metodología.
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Cantidad de Antecedentes necesarios. 
+        \label{fig-cantidad-antecedentes}}    
+            
+        \includegraphics[width=10.0 cm]{src/imgs/cant-antecedentes.png}
+
+        \vspace{0.1cm}
+        \small Elaborado a partir de ...
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Estructura de redacción de los antecedentes.
+        \label{fig-estructura-antecedentes}}    
+            
+        \includegraphics[width=10.0 cm]{src/imgs/estructura-antecedentes.png}
+
+        \vspace{0.1cm}
+        \small Elaborado a partir de ...
+    \end{figure}
 
     \textcite{arensmeyer_system_2024}, describieron un novedoso sistema de planificación quirúrgica tridimensional en tiempo real basado en realidad mixta mediante el uso de un visor con tecnología de transmisión de video (video pass-through) y el renderizado volumétrico de datos de tomografía computarizada (TC). La investigación tuvo como finalidad mejorar la evaluación preprocedural y la planificación de tratamientos personalizados en cirugías complejas de la cavidad torácica, minimizando la necesidad de guías basadas en radiación intraoperatoria. Para validar el concepto, los autores aplicaron el sistema clínico en el Hospital Universitario de Bonn (Alemania), proyectando y alineando hologramas anatómicos interactivos sobre los cuerpos de tres pacientes oncológicos masculinos atendidos entre 2022 y 2023. Como principales resultados, los cirujanos lograron identificar con precisión las regiones de interés y distinguir la relación geométrica entre las lesiones y las estructuras blandas u óseas adyacentes utilizando herramientas de manipulación de imagen e integración de sensores LiDAR. Los autores concluyeron que el uso de superposiciones holográficas en entornos de realidad extendida resulta altamente prometedor para optimizar el abordaje de operaciones torácicas complejas o menos estandarizadas, proporcionando una perspectiva quirúrgica superior en comparación con las imágenes bidimensionales convencionales. El trabajo de \textcite{arensmeyer_system_2024} resalta el problema identificado por la presente investigación, aseverando que la poca utilización de las imágenes reconstruidas en 3D para la planificación quirúrgica de cirugías torácicas, los cuales al ser combinados con métodos inmercivos como la realidad Virtual u Mixta mejoran la precisión en la planificación. \newline
     
     \textcite{bakhuis_essential_2023} investigaron el valor clínico añadido de la tecnología de realidad virtual (RV) en el planeamiento preoperatorio de segmentectomías pulmonares. La investigación tuvo como finalidad evaluar la cantidad de modificaciones críticas en los planes quirúrgicos tradicionales y analizar la planificación preoperatoria ante una mejor perspectiva espacial de la anatomía broncovascular del paciente. El estudio se realizó con un equipo de tres cirujanos y un residente del Centro Médico de la Universidad de Erasmus en Rotterdam (Países Bajos); por su parte, se analizaron los resultados de 50 pacientes programados para resección segmental sublobar entre junio de 2020 y septiembre de 2021. El desarrollo metodologógico constó del procesamiento de las tomografías computarizadas (TC) convencionales mediante inteligencia artificial con la plataforma PulmoVR para realizar segmentaciones automáticas de los bordes pulmonares y vasos anatómicos. Como principales resultados, la visualización inmersiva en 3D provocó que los cirujanos modificaran el plan quirúrgico original en el 52\% de los casos (debido a localizaciones tumorales erróneas o variantes anatómicas ocultas), logrando una tasa de éxito de resección radical confirmada del 98\%. Los autores concluyeron que la integración de la realidad virtual preoperatoria proporciona una comprensión anatómica superior y personalizada, permitiendo realizar cirugías con mayor preservación de tejido pulmonar sano sin comprometer la radicalidad oncológica. El trabajo de \textcite{bakhuis_essential_2023} responde directamente a la problemática establecida por el presente trabajo respecto a la limitada imagen mental que los cirujanos son capaces de percibir respecto a la patología y anatomía del paciente solo mediante el uso de imágenes médicas en el marco bidimensional. \newline
-
-
-    \textcite{petrella_assessment_2024} compararon la precisión en la identificación de la anatomía vascular pulmonar mediante imágenes de tomografía computarizada (TC) convencional frente al uso de hologramas interactivos en realidad aumentada. La investigación tuvo como finalidad determinar la facilidad de interpretación y el conteo exacto de las arterias de los lóbulos pulmonares programados para lobectomía, utilizando los hallazgos quirúrgicos reales intraoperatorios como el estándar de referencia. Para lograrlo, los autores llevaron a cabo un estudio prospectivo en el Instituto Europeo de Oncología en Milán (Italia), en el cual incluyeron a un grupo de 52 pacientes diagnosticados con cáncer de pulmón que requirieron cirugía reconstructiva entre los años 2021 y 2023. Para la realización del trabajo un radiólogo y un cirujano torácico evaluaron a ciegas las TC bidimensionales y, posteriormente, examinaron modelos tridimensionales específicos de cada paciente usando el visor HoloLens 2. Los resultados fueron evaluados mediante la prueba de rangos con signo de Wilcoxon y la estadística. Como principales resultados, la visualización holográfica permitió a los especialistas la identificación del 98\% del número de arterias (51/52) en comparación con el 92.3\% (44/52) obtenido mediante TC. Ambos especialistas mostraron una mayor concordancia para con los hologramas $(k=0.99)$ que para las TC $(k=0.81)$ y encontraron que los hologramas eran más fáciles de evaluar que las TC $(p<0.001)$. Los autores concluyeron que la realidad aumentada por hologramas supera a las imágenes tradicionales en la planificación preoperatoria, optimizando la seguridad y reduciendo los riesgos de complicaciones vasculares imprevistas durante las lobectomías oncológicas. El trabajo de \textcite{petrella_assessment_2024} apoya la presente investigación al evidenciar que la visualización volumétrica de las imágenes médicas mediante una representación tridimensional real mejora la percepción y precisión de los especialistas respecto a la anatomía del paciente.\newline
-
-    \textcite{ozgiray_effect_2024} examinaron el efecto de la planificación preoperatoria mediante el uso de modelos tridimensionales impresos en 3D de aneurismas intracraneales en los tiempos quirúrgicos y los resultados postquirúrgicos. Para ello, los autores llevaron a cabo un estudio en la Escuela de Medicina de la Universidad de Ege en Esmirna (Turquía), donde incluyeron a 40 pacientes que presentaron aneurismas atendidos entre los años 2018 y 2019, dividiéndolos equitativamente en un grupo de control I (n=20) que solo contaron con las angiografías y un grupo experimental (n=20) que contaron con las representaciones físicas en 3D. Se evaluaron los datos demográficos, los datos quirúrgicos y las puntuaciones de la escala de Ranking modificada (mRS) preoperatoria y posoperatoria, junto a las puntuaciones de Glasgow (GOS). Como principales resultados, el grupo I obtuvo una media de tiempo de cirugía de 170,0 $\pm$ 16,5 min (rango, 150-210), mientas que el grupo II obtuvo una media de 134.0 $\pm$ 24.5 min, evidenciando una reducción significativa del tiempo total de cirugía para el grupo que utilizó los modelos 3D ($p<0.001$); sin embargo, no se observaron diferencias significativas en la puntuación GCS (p=0.229) ni el tiempo de hospitalización (p=0.838). Los autores concluyeron que el modelado y la simulación preoperatoria en 3D son herramientas de gran utilidad que optimizan el rendimiento del cirujano, acortan los tiempos operatorios y mejoran sustancialmente los resultados clínicos en cirugías complejas de aneurismas. El trabajo de \textcite{ozgiray_effect_2024} apoya la presente investigación al evidenciar que el análisis de las pruebas médicas mediante una visualización tridimensional real en la etapa preoperatoria tiene resultados significativos en los procesos quirúrgicos.\newline
-
-    \textcite{wong_mixed_2023} evaluaron la utilidad de la realidad mixta (RM) mediante modelos holográficos interactivos en la mejora de la conciencia espacial de tumores óseos primarios para la planificación quirúrgica preoperatoria. Para cumplir su objetivo, los autores desarrollaron un estudio de prueba de concepto de base tecnológica en el Hospital Prince of Wales de la Universidad China de Hong Kong, en el cual por medio del consentimiento verbal informado se evaluó a un grupo de 9 pacientes programados para cirugía de tumores óseos entre julio de 2021 y diciembre de 2022. Como parte del procedimiento, el cirujano examinó clínicamente a cada paciente utilizando el método convencional de visualización de imágenes 2D junto al método en estudio de RM a través de HMD, Hololens 2. Se utilizó una escala de Likert y la Puntuación del Índice de carga de tareas (NASA-TLX) para evaluar y comparar la eficacia de la planificación quirúrgica y la carga de trabajo cognitivo del cirujano. Como principales resultados, el uso del dispositivo mostró una conciencia espacial y percepción tumoral más eficaz; por su parte, se identificó una menor carga cognitiva menor para el grupo que utilizó la tecnología de hologramas RM. Los autores concluyeron que la realidad mixta actúa como una valiosa herramienta de planificación que optimiza significativamente la comprensión espacial tridimensional de neoplasias óseas complejas antes de la exposición quirúrgica real. El trabajo de \textcite{wong_mixed_2023} apoya la presente investigación al evidenciar que la visualización volumétrica de las imágenes médicas en una representación tridimensional mejora la percepción espacial y precisión de los especialistas respecto a las patologías del paciente.\newline
-
-    \textcite{morimoto_xr_2022} examinaron el estado actual, las aplicaciones clínicas y los desafíos técnicos de las tecnologías de realidad extendida (XR) —realidad virtual, aumentada y mixta— en el campo de la medicina de la columna vertebral. La investigación tuvo como finalidad sintetizar la literatura científica existente para identificar cómo estas herramientas inmersivas transforman la educación médica, las consultas, la navegación quirúrgica intraoperatoria y la rehabilitación, determinando sus limitaciones y perspectivas futuras de desarrollo. Para cumplir este propósito, los autores realizaron una revisión narrativa de la literatura médica global indexada, recopilando y clasificando 8399 estudios sobre XR publicados en el campo médico de 1992 a 2020. Como principales resultados, el análisis evidenció que la aplicación de las XR está mayormente ligado y ha evidenciado mejores resultados en los procedimientos de diagnóstico, procedimientos quirúrgicos y de rehabilitación, así como su especial utilidad en el ámbito de la educación médica. Aunque persisten limitaciones como los altos costos, los retrasos en la imagen (latency), baja resolución de la imagen, brillo y contraste, así como la falta de alfabetización digital y la fatiga visual. Los autores concluyeron que la realidad extendida es una tecnología disruptiva y madura que redefine la cirugía de columna hacia un enfoque de alta precisión, requiriendo aún de mayor estandarización técnica y reducción de costos para consolidar su adopción clínica masiva. El trabajo de \textcite{morimoto_xr_2022} dota al presente estudio de una base de información sólida, al evidenciar que la transformación digital y las técnicas de representación tridimensional, en este caso, por medio de la XR, tienen un impacto significativo en la mejora de los procesos quirúrgicos, así como expectativas prometedoras a largo plazo.\newline
-
-    \textcite{nowak_intraoperative_2025} realizaron una revisión sistemática de la literatura en todas las disciplinas quirúrgica para evaluar la utilidad intraoperatoria y las limitaciones de las aplicaciones de Realidad Mixta (RM) --Realidad aumentada (RA) y Realidad Virtual (RV)--. Se incluyeron 41 estudios originales de aplicaciones RM con un nivel de Preparación Tecnológica (TRL) de 6 o superior, abarcando un total de 760 pacientes en múltiples disciplinas quirúrgicas. Los resultados evidenciaron que las 3 aplicaciones principales de la tecnología de RM englobal: Navegación Quirúrgica (MR-SN), utilizada para el seguimiento de instrumentos en tiempo real junto con la definición de trayectorias en procedimientos como cirugía de columna, neurocirugía y cirugía maxilofacial; Guía de Imágenes (MR-IG), para la superposición visual de modelos 3D sobre puntos de referencia anatómicos y la Referencia de imagen (MR-IR), utilizada como modelo de referencia 3D estático adyacente al campo quirúrgico en campos como la oftalmología y la radiología intervencionista. La RM demostró mejoras en la precisión, eficiencia y visualización quirúrgica, aunque también una serie de limitaciones como molestias ergonómicas, latencia, un campo de visión estrecho, y desafíos de superposición anatómica. Los autores concluyen que la Realidad Mixta tiene el potencial de mejorar la visualización, orientación y navegación intraoperatoria, aunque con limitaciones importantes las cuales se espera disminuyan a medida que la tecnología madure. El trabajo de \textcite{nowak_intraoperative_2025} sienta una base más a la investigación al demostrar el uso de los Technology Readiness Level (TRL) como una herramienta importante a la hora de evaluar las nuevas soluciones tecnológicas, así como evidenciar que la RM tiene un impacto significativo en el ámbito intraoperatorio, con limitaciones las cuales el presente proyecto busca superar.
 \end{sectext}
     
 
 \section{Marco Teórico}
-\begin{sectext}
+    \begin{sectext}
+        Define hasta qué punto se enmarca la investigación.
 
-\subsection{Visualización computacional de Imágenes Médicas}
-\begin{subsectext}
+        Como recomendación, no debes poner más conceptos de los que usarás. Ya que de lo contrario se custionará el: ¿Y dónde utilizó tal u tal concepto?
 
-    La visualización médica se define como el uso de técnicas de gráficos por computadora para crear representaciones visuales interactivas de datos médicos.
-    Esta disciplina se considera como una rama especial de la visualización científica debido a su naturaleza inherentemente espacial \parencite{PREIM2014-1}; los inicios de la visualización médica se remontan a la representación histórica de las ilustraciones anatómicas realizadas por Da Vinci, siendo en la actualidad los modernos algoritmos de gráficos por computadora, el procesamiento de imágenes y el análisis cuantitativo \parencite{PREIM2014-1}. 
-    
-    Es necesario recalcar que la visualización científica y médica no se basan únicamente en la exploración visual de imágenes. \textcite{mccormick_visualization_1991} definió en su investigación: ``El propósito de la visualización es la percepción, no las imágenes``. Para los sistemas de visualización médica, dotar a los médicos de un profundo entendimiento respecto a los procesos de diagnóstico, decisiones terapéuticas y la información intraoperatoria es indispensable \parencite{PREIM2014-1}. He aquí donde encontramos otro concepto crucial en los sistemas de visualización médica, la interacción. Las representaciones estáticas de los datos rara vez son suficientes para proporcionar una comprensión completa de la información médica, la interacción permite a los usuarios la navegación a través de los datos, seleccionar porciones relevantes, comparar diversos conjuntos de datos, así como ajustar parámetros de visualización --contraste, transparencia-- \parencite{PREIM2014-1}.
+        Aquí de cierta manera se delimita el alcance. Míralo como los márgenes de un estadio de fútbol.
 
-    La visualización médica se ocupa del análisis, visualización y exploración de datos en imágenes médicas \parencite{PREIM2014-1}. Este procedimiento se presenta en diversas etapas u áreas de aplicación médica, tales como:
+        \subsection{Concepto como subsección 1}
+            \begin{subsectext}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit. 
 
-    \begin{itemize}
-        \item \textbf{Diagnóstico}\newline
-        Presenta beneficios en la evaluación de datos radiológicos (como TC y RM) mediante visualizaciones interactivas en 2D y 3D. Es particularmente útil cuando la situación del paciente es inusual, como en el caso de fracturas complejas o malformaciones. Además, facilita la integración de datos funcionales y dinámicos (como la perfusión sanguínea o el metabolismo) \parencite{PREIM2014-1}.
+                \begin{itemize}
+                    \item \textbf{Item 1}\newline
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. 
 
-        \item \textbf{Planificación de Tratamientos}\newline
-        Las representaciones tridimensionales interactivas de estructuras anatómicas y patológicas pueden mejorar significativamente la planificación de intervenciones quirúrgicas (ortopédicas, neurológicas, maxilofaciales, etc.), radioterapia e intervenciones mínimamente invasivas. Permite a los médicos evaluar de antemano las relaciones espaciales entre las lesiones patológicas (como tumores) y las estructuras vitales de riesgo. También hace posible visualizar información predictiva, como los territorios de suministro vascular afectados tras una resección o la distribución simulada de dosis de radiación \parencite{PREIM2014-1}.
+                    \item \textbf{Item 2}\newline
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo.
+                \end{itemize}
+            \end{subsectext}
 
-        \item \textbf{Soporte Intraoperatoria}\newline
-        La visualización médica se encuentra en un creciente uso en el ámbito quirúrgico debido a los sistemas de Cirugía Guiada por Imágenes (IGS) \parencite{razek_image-guided_2026,lin_modern_2023, ma_three-dimensional_2024} y Realidad Aumentada \parencite{shaikh_data-centric_2022}. El propósito en el ámbito intraoperatorio consiste en la integración de imágenes adquiridas en la fase preoperatoria con imágenes intraoperatorias en tiempo real con el objetivo de guiar el accionar del cirujano durante la intervención, reduciendo complicaciones y permitiendo operar con precisión áreas de difícil acceso directo \parencite{PREIM2014-1}.
+        \subsection{Concepto como subsección 2}
+            \begin{subsectext}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. Enim sed laudantium repellat odit eligendi quam facilis perspiciatis similique quo impedit praesentium eos error et corrupti quidem, aperiam consequuntur debitis libero tempora commodi aut voluptatum? Quasi numquam temporibus, tempore amet commodi tempora, mollitia hic esse molestias earum eligendi, sint rem suscipit! Quia est veritatis aspernatur nihil, eius consectetur tenetur quaerat, sunt quo numquam nesciunt ipsam iure reiciendis quisquam facilis totam obcaecati rem, culpa praesentium voluptates voluptatum sit. 
 
-        \item \textbf{Documentación}\newline
-        La generación de reportes, informes u otras medidas de documentación se benefician de la utilización de imágenes médicas al presentar visualizaciones representativas, que comúnmente, incluyen además anotaciones, etiquetas de estructuras y mediciones cuantitativas (como el volumen o diámetro de un tumor o la angulación de un hueso). El análisis cuantitativo de las características de la imagen pueden contribuir a la consolidación de la documentación clínica \parencite{PREIM2014-1}.
+                \begin{itemize}
+                    \item \textbf{Item 1}\newline
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo. 
 
-        \item \textbf{Propósitos Educativos}\newline
-        Las técnicas de visualización son el pilar de los sistemas de educación anatómica (VOXEL-MAN, eLap4D) y de simuladores quirúrgicos (TrueVision, ). Estos sistemas permiten a estudiantes y cirujanos en formación interactuar, ensayar y adquirir habilidades cognitivas y motoras de forma repetible, sin poner en riesgo a pacientes reales \parencite{PREIM2014-1,kasano_simulacion_2018,calle-diaz_metodologias_2021}.
-    \end{itemize}
-\end{subsectext}
+                    \item \textbf{Item 2}\newline
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolor sapiente accusamus vel tempore distinctio dicta architecto at beatae aliquam, cumque consequatur iure, aspernatur unde ratione a enim non molestiae voluptas nemo.
+                \end{itemize}
 
-\subsection{Naturaleza de las Imágenes Médicas}
-\begin{subsectext}
-Cuando nos referimos a los datos de las imágenes médicas, estamos hablando de una representación digital de la anatomía y fisiología del cuerpo humano a través de un plano de imagen \parencite{larobina_medical_2014}, estas pueden ser adquiridas de diversas maneras como bien detallaremos más adelante. Existen 2 clases de métodos mediante los cuales podemos obtener imágenes médicas: métodos bidimensionales (2D) --rayos x-- y los métodos volumétricos (3D) --TC, RM, Angiografías, etc.--. Las imágenes médicas representan una porción considerablemente delgada de la zona de interés compuesta por una serie de píxeles individuales establecidos a lo largo de una matriz 2D; por lo general, la distancia en el eje horizontal (x) y el vertical (y) de la matriz son idénticas. Estos valores nos permiten calcular la posición real de cada píxel al multiplicar el valor del píxel $i$ deseado por la distancia asociada en el eje $P_{i,j}$ \parencite{PREIM2014-2}.
-
-Por su parte, los datos volumétricos se representan mediante una cuadrícula tridimensional (3D). Aquí se establecen múltiples matrices de píxeles 2D llamadas cortes, la unidad mínima adopta el nombre de vóxel (volumetric pixel), el cual representa cada punto dentro del volumen. El espacio o ubicación del vóxel se establece como la relación entre los valores de cada corte respecto a la distancia entre los mismos: $V_{i,j,k}$ \parencite{PREIM2014-2}.
-
-Según las propiedades matemáticas y físicas que tienen los datos médicos, podemos clasificar a los mismos en 3 grandes grupos:
-
-\begin{itemize}
-    \item \textbf{Escalares}
-    
-    Engloba a toda aquella representación cuyos atributos solo contienen un valor escalar, es decir, una cantidad sin dirección. Los datos escalares son el tipo de datos que presenta mayor prevalencia debido a ser el resultado de técnicas como la Tomografía Computarizada (TC) o las Imágenes por Resonancia Magnética (RM) convencional \parencite{zhou_review_2022}. 
-
-    \item \textbf{Vectoriales}
-    
-    Cuando los atributos contemplan tanto cantidad como dirección, las imágenes médicas deben visualizarse en un campo vectorial. Esta información puede ser extraída a partir de simulaciones bioeléctricas en electrocardiogramas (ECG), cardiología y electroencefalografía (EEG) o magnetoancefalografía (MEG). El uso de estos campos vectoriales es muy recurrente frente a situaciones de dinámica de fluidos en el cuerpo humano: hemodinámica, la aerodinámica nasal y la hemodinámica aórtica del aneurisma cerebral patológico \parencite{zhou_review_2022}.
-
-    \item \textbf{Tensoriales}
-    
-    Engloba a las imágenes médicas los cuales tienen por atributo a tensores de segundo orden (matrices simétricas). Uno de los métodos más comúnes en los datos tensoriales es el de Imágenes por Tensor de Difusión (DTI); este método permite identificar la información de difusión de moléculas de agua en los tejidos \parencite{zhou_review_2022}.
-\end{itemize}
-
-Cabe resaltar que estos tipos de datos no son excluyentes, en la práctica médica real es usual el uso de imágenes médicas con campos múltiples: escalares y vectores, u escalares y tensores \parencite{zhou_review_2022}.
-
-
-\subsection{Almacenamiento de Imágenes Médicas}
-
-El almacenamiento de los datos médicos puede realizarse a través de diversos formatos: Nifti, DICOM, Minc, Analyze, etc. Sin embargo, el formato DICOM (Digital Imaging and Communications in Medicine) es el estándar industrial para el almacenamiento, transferencia y visualización de imágenes médicas \parencite{PREIM2014-3,larobina_medical_2014}. El formato DICOM se caracteriza por estandarizar las imágenes en la fase de diagnóstico, permitiendo un valor añadido en términos de interoperabilidad, usabilidad y acceso a la información. Dicom permite almacenar toda la información que dio lugar a una imagen médica: metadatos que incluye la información del paciente y personal que realizó la prueba, lugar dónde se llevó a cabo la prueba, así como los parámetros de adquisición y escaneo; además, también incluye la matriz de la imagen médica \parencite{larobina_medical_2014}. 
-
-
-\subsection{Adquisición de Imágenes Médicas}
-
-    Como se mencionó anteriormente, las imágenes médicas son necesarias para diversos propósitos: Diagnóstico, planificación de tratamientos, navegación intraoperatoria, monitoreo postoperatorio, entre otros. Estas imágenes se adquieren mediante diversas estrategias y la elección de la misma se definirá en base a los requerimientos clínicos necesarios: representar completamente la anatomía relevante, la resolución de la información debe ser suficiente para responder a preguntas terapéuticas o de diagnóstico, minimizar la exposición de radiación al paciente, como también minimizar los costes \parencite{PREIM2014-2}. Cabe recalcar que la búsqueda de la mejor resolución espacial u la más ópima calidad de la imagen no representan objetivos relevantes, ya que en algunas ocasiones, terminarán generando resultados no deseados --demasiada exposición a la radiación, u altos costos--.
-
-% \begin{table}[h!tp]
-%     \centering
-%     \small % Un punto menos ayuda a la legibilidad en tablas densas
-%     \renewcommand{\arraystretch}{1} % Espacio equilibrado entre filas
-
-%     \caption{Modalidades de Adquisición de Imágenes Médicas}
-%     \label{tab:modalidades-adquisicion-imagenes-medicas}
-% % Usamos tabularx para que la tabla se ajuste exactamente al ancho de página
-
-%     \begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries}p{3.5cm} X X @{}}
-%         \toprule
-%         \textbf{Modalidad} & \textbf{Funcionamiento} & \textbf{Resultados} \\
-%         \midrule
-
-%         Rayos X & Atenuación de la radiación a medida que atraviesa los tejidos & Promedio ponderado de la absorción de radiación a lo largo de un rayo. Principalmente muestran siluetas de las estructuras superpuestas, lo que dificulta la localización en profundidad sin el uso de proyecciones biplanares. \\
-%         \addlinespace[0.3cm]
-
-%         Angiografía por Sustracción Digital (DSA) & Se inyecta un agente de contraste --yodo--, donde se captura una "imagen máscara" antes del contraste y la sustrae de las imágenes con contraste & Árbol vascular \\
-%         \addlinespace[0.3cm]
-
-%         Fluoroscopia & Generalmente, durante la fase intraoperatoria mediante un escáner de brazo en C (Carm7) que realiza una exposición continua --de baja intensidad-- a la radiación X & Radiografías en tiempo real (aunque con menor calidad) \\
-%         \addlinespace[0.3cm]
-
-%         Tomografía computarizada (CT) & Sistema emisor y detector de rayos X que rota alrededor del paciente. Los vóxels se estandarizan en Unidades Hounsfield (HU) donde 0 HU representa el agua y -1000 HU el aire & Localización anatómica precisa en profundidad \\
-%         \addlinespace[0.3cm]
-
-%         Tomografía computarizada de Doble Fuente (Dual Source CT) & Utilizan 2 tubos de rayos X desplazados 90º que trabajan a diferentes niveles de energía (Dual Energy) & Resultados similares a las CT convenciales con una considerable mayor caracterización de los tejidos. \\
-%         \addlinespace[0.3cm]
-
-%         Resonancia Magnética (RM) & Generar una resonancia de los protones al girar a la frecuencia de Larmor y al ser estimulados por un pulso de radiofrecuencia. Cuando el pulso cesa, los protones emiten un eco al regresar a su estado original. La velocidad de este retorno se define mediante los tiempos de relajación T1 y T2, que varían significativamente según el tipo de tejido. & Imágenes altamente detalladas, con un contraste de tejidos blandos mayor a las CT y altamente configurable a los Tiempos de Eco (TE) y Repetición (TR) \\
-%         \addlinespace[0.3cm]
-
-%         Ecografías (Ultasonido) & Emisión de ondas sonoras de alta frecuencia (1 a 15 MHz) que reflejan las diferentes densidades de tejido & Imágenes en tiempo real de alta resolución, indispensable para cirugías guiadas por imagen u evaluaciones fetales, pero con bordes poco nítidos y el ensombrecimiento acústico detrás de estructuras densas o llenas de aire \\
-%         \addlinespace[0.3cm]
-
-%         Tomografía por Emisión de Positrones (PET) & Por medio de trazadores radioactivos inyectados al paciente, isótopos como el Fluorodesoxiglucosa (FDG) emiten positrones que, al aniquilarse con electrones, generan dos fotones en direcciones opuestas que el escáner detecta & Imágenes con alta sensibilidad a los procesos metabólicos como los tumores malignos. \\
-%         \addlinespace[0.3cm]
-
-%         Tomografía por Emisión de Positrones (PET) & Proceso similar al PET, normalmente con Tecnecio-99m & Imágenes similares a las PET, con menor resolución y trazadores más largos en el tiempo. \\
-%         \addlinespace[0.3cm]
-%         \bottomrule
-%     \end{tabularx}
-
-%     \noindent{\footnotesize{\textit{Nota.} Adaptado a partir de \textcite{PREIM2014-2}}}
-%     \end{table}
-  
-\small % Un punto menos ayuda a la legibilidad en tablas densas
-\renewcommand{\arraystretch}{1} % Espacio equilibrado entre filas
-
-% Usamos xltabular directamente apuntando al ancho de página
-\begin{xltabular}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries}p{3.5cm} X X @{}}
-    
-    % --- CONFIGURACIÓN DE CAPTIONS Y ENCABEZADOS ---
-    \caption{Modalidades de Adquisición de Imágenes Médicas}
-    \xdef\currentLTtable{\thetable}
-
-    \label{tab:modalidades-adquisicion-imagenes-medicas} \\
-    \toprule
-    \textbf{Modalidad} & \textbf{Funcionamiento} & \textbf{Resultados} \\
-    \midrule
-    \endfirsthead % Fin del primer encabezado
-    
-    % Esto es lo que aparecerá en la parte superior de las páginas siguientes:
-    \caption*{Tabla \currentLTtable}\\
-    \toprule
-    \textbf{Modalidad} & \textbf{Funcionamiento} & \textbf{Resultados} \\
-    \midrule
-    \endhead % Fin del encabezado de continuación
-    
-    \bottomrule
-    % \multicolumn{3}{r}{\footnotesize Continúa en la siguiente página...} \\
-    \endfoot % Pie de página para las hojas intermedias
-    
-    \bottomrule
-    \multicolumn{3}{@{}l}{\footnotesize \textit{Nota.} Adaptado a partir de \textcite{PREIM2014-2}} \\
-    \endlastfoot % Pie de página definitivo (solo al final de toda la tabla)
-    
-    % --- CONTENIDO DE LA TABLA ---
-    Rayos X & Atenuación de la radiación a medida que atraviesa los tejidos & Promedio ponderado de la absorción de radiación a lo largo de un rayo. Principalmente muestran siluetas de las estructuras superpuestas, lo que dificulta la localización en profundidad sin el uso de proyecciones biplanares. \\
-    \addlinespace[0.3cm]
-    
-    Angiografía por Sustracción Digital (DSA) & Se inyecta un agente de contraste --yodo--, donde se captura una ``imagen máscara`` antes del contraste y la sustrae de las imágenes con contraste & Árbol vascular \\
-    \addlinespace[0.3cm]
-    
-    Fluoroscopia & Generalmente, durante la fase intraoperatoria mediante un escáner de brazo en C (Carm7) que realiza una exposición continua --de baja intensidad-- a la radiación X & Radiografías en tiempo real (aunque con menor calidad) \\
-    \addlinespace[0.3cm]
-    
-    Tomografía computarizada (TC) & Sistema emisor y detector de rayos X que rota alrededor del paciente. Los vóxels se estandarizan en Unidades Hounsfield (HU) donde 0 HU representa el agua y -1000 HU el aire & Localización anatómica precisa en profundidad. Produce un set de datos en escala de grises. \\
-    \addlinespace[0.3cm]
-    
-    Tomografía computarizada de Doble Fuente (Dual Source TC) & Utilizan 2 tubos de rayos X desplazados 90º que trabajan a diferentes niveles de energía (Dual Energy) & Resultados similares a las CT convenciales con una considerable mayor caracterización de los tejidos. \\
-    \addlinespace[0.3cm]
-    
-    Resonancia Magnética (RM) & Generar una resonancia de los protones al girar a la frecuencia de Larmor y al ser estimulados por un pulso de radiofrecuencia. Cuando el pulso cesa, los protones emiten un eco al regresar a su estado original. La velocidad de este retorno se define mediante los tiempos de relajación T1 y T2, que varían significativamente según el tipo de tejido. & Imágenes altamente detalladas, con un contraste de tejidos blandos mayor a las TC y altamente configurable a los Tiempos de Eco (TE) y Repetición (TR). Produce un set de datos en escala de grises.\\
-    \addlinespace[0.3cm]
-    
-    Ecografías (Ultasonido) & Emisión de ondas sonoras de alta frecuencia (1 a 15 MHz) que reflejan las diferentes densidades de tejido & Imágenes en tiempo real de alta resolución, indispensable para cirugías guiadas por imagen u evaluaciones fetales, pero con bordes poco nítidos y el ensombrecimiento acústico detrás de estructuras densas o llenas de aire \\
-    \addlinespace[0.3cm]
-    
-    Tomografía por Emisión de Positrones (PET) & Por medio de trazadores radioactivos inyectados al paciente, isótopos como el Fluorodesoxiglucosa (FDG) emiten positrones que, al aniquilarse con electrones, generan dos fotones en direcciones opuestas que el escáner detecta & Imágenes con alta sensibilidad a los procesos metabólicos como los tumores malignos. Produce un set de datos con un mapa de colores. \\
-    \addlinespace[0.3cm]
-    
-    Tomografía por Emisión de Positrones (PET) & Proceso similar al PET, normalmente con Tecnecio-99m & Imágenes similares a las PET, con menor resolución y trazadores más largos en el tiempo. Produce un set de datos con un mapa de colores.\\
-
-\end{xltabular}
-\end{subsectext}
-
-\subsection{Reconstrucción Tridimensional}
-\begin{subsectext}
-Para comprender cómo los algoritmos computacionales generan representaciones tridimensionales del cuerpo humano, es indispensable entender primero cómo se estructuran los datos subyacentes y qué técnicas se emplean para generar modelos 3D a partir de imágenes bidimensionales discretas.
-
-Las métodos de adquisición de imágenes médicas (como TC y RM) no producen volúmenes continuos, sino que generan datos que se organizan como una pila de imágenes individuales (cortes) \parencite{PREIM2014-2}. Para convertir estos datos a repreentaciones volumétricas, la literatura reciente clasifica las técnicas de reconstrucción 3D en métodos de expresión explícita e implícita \parencite{zhou_comprehensive_2024}.
-
-\begin{itemize}
-    \item \textbf{Expresión Explícita}
-    
-    Define directamente la forma y estructura geométrica del objeto. Los principales métodos para mostrar esta información incluyen las nubes de puntos, vóxeles y mallas. Las nubes de puntos consisten en colecciones desordenadas de puntos en un espacio 3D, útil para capturar características superficiales. Esta representación divide todo el volumen 3D en una cuadrícula regular con unidades cúbicas llamadas vóxels. Cada vóxel almacena información de atributos espaciales, color, densidad u profundidad. Es la representación natural de escáneres de TC u RM. Si bien los vóxeles pueden ser utilizados para representar la estructura y los atributos de un cuerpo en el espacio, ello conduce a una gran complejidad tridimensional. Aquí es donde encontramos al Mesh (Malla), la cual esta compuesta de múltiples vértices, aristas y caras conectadas --triángulos, cuadriláteros u polígonos--. El modelo de malla es el estándar para aplicaciones de gráficos por computadora, debido a su gran capacidad de representar con presención topologías complejas \parencite{zhou_comprehensive_2024}. 
-
-    \item \textbf{Expresión Implícita}
-    
-    En lugar de almacenar datos geométricos explícitos, la geometría se define matemáticamente mediante una función continua (como ecuaciones de superficie o Funciones de Distancia Firmada - SDF). Las representaciones implícitas son altamente eficientes en almacenamiento, permiten recuperar formas a cualquier resolución y son ideales para modelar superficies suaves y estructuras anatómicas complejas (como los vasos sanguíneos) \parencite{zhou_comprehensive_2024}.
-
-\end{itemize}
-
-Frente a imágenes médicas con campos de tipo escalar, se utilizan predominantemente 2 métodos:
-
-
-\begin{itemize}
-    \item \textbf{Renderizado de Volumen Indirecto (Isosuperficies)}
-    
-    Consta de extraer superficies que presenten valores en sus datos (como las Unidades Hounsfield) para la visualización de representaciones volumétricas mediante mallas de superficie. Este tipo de renderizado suele realizarse mediante el algoritmo de Marching Cubes.
-    
-    \item \textbf{Renderizado de Volumen Directo (DVR)}
-    
-    Consta de representar directamente el volumen sin extraer ninguna superficie intermedia. Se basa en modelos ópticos y aproximaciones a la propagación de la luz. Estos datos, al pasar por medio de funciones de transferencia (1D o multidimensionales), permiten la exploración del interior de los estructuras anatómicas reconstruidas a partir de los datos médicos, agregando opacidad y color a rangos específicos de valores \parencite{zhou_review_2022}. 
-
-\end{itemize}
-\end{subsectext}
-
-\subsection{Technology Readiness Level (TRL)}
-\begin{subsectext}
-Los Technology Readiness Level u Niveles de Madurez Tecnológica --en su traducción al español-- son un sistema de medición que se utiliza para evaluar el nivel de madurez --desarrollo-- de una tecnología en particular. Las tecnologías se evaluan en base a los parámetros establecidos para cada nivel, los cuales van desde el TRL 1, que representa el inicio de la investigación científica por medio de observación y el reporte de principios básicos, hasta el TRL 9, que representa a una tecnología completamente probada y operativa en un entorno real. Este sistema es ampliamente utilizado en la industria y la investigación para tomar decisiones informadas sobre la inversión, desarrollo y comercialización de nuevas tecnologías \parencite{noauthor_technology_2023}.
-
-    \begin{figure}[H]
-        \centering
-        \caption{Niveles de Madurez Tecnológica 
-        \label{fig-technology-readiness-levels}}  
-        
-    %\isPreprints{\centering}{} % Only used for preprints
-        \includegraphics[width=9.0 cm]{src/imgs/trl.png}
-        
-        \vspace{0.1cm}
-        \small Tomado de \textcite{noauthor_technology_2023}
-    \end{figure}
-\end{subsectext}
-
-\subsection{Matriz de Trazabilidad de Requerimientos (MTR)}
-\begin{subsectext}
-
-Para entender este concepto, primero debemos entender las partes que conforman a este mismo: Trazabilidad de Requerimientos y los Requerimientos. Empezando por los requerimientos, \textcite[32]{robertson_mastering_2012}  mencionan: ``Los requerimientos son lo que un producto de software, producto de hardware, servicio o lo que sea que intentes construir, debe hacer y ser``. Por otra parte, la Trazabilidad de Requerimientos, según \textcite[1]{gotel_analysis_1994}: ``La trazabilidad de requisitos se refiere a la capacidad de describir y seguir la vida de un requisito, tanto hacia adelante como hacia atrás``. Por tanto,  podemos definir a la Matriz de Trazabilidad de Requerimientos (MTR) como un método para garantizar que los entregables de un proyecto u desarrollo cumplan con los requerimientos establecidos por medio del seguimiento de los mismos durante todo su ciclo de vida: Diseño, desarrollo, implementación y uso \parencite{robertson_mastering_2012,regan_investigation_2013}.
-
-La matriz de trazabilidad de requisitos es impulsada principalmente por los requerimientos del usuario, por tanto la primera columna siempre está asociada a este campo --o a su identificador--; los campos siguientes tienden a cambiar de nombre en base al producto que se esté desarrollando, un caso de matriz asociado al desarrollo tecnológico puede tener la siguiente estructura: requisitos de software u hardware que satisfacen los requisitos del usuario, diseño detallado, casos de pruebas \parencite{regan_investigation_2013}. 
-\end{subsectext}
-
-
-\subsection{Modelo V de Desarrollo}
-\begin{subsectext}
-
-El Modelo en V (V-Model) es un marco metodológico estandar propio de la ingeniería de sistemas fundamental para el desarrollo estructurado de productos de software y hardware \parencite{gross_development_2022,biller_novel_2025}. El Modelo en V representa el ciclo de vida del desarrollo de un producto por medio de un camino en ``V``, donde cada fase de desarrollo tiene una fase de verificación u testeo directamente relacionada. A su vez, cada nueva etapa del proceso toma de base los insumos u entradas del proceso anterior, conjunto a validaciones y métodos de verificación constantes para garantizar la calidad \parencite{gross_development_2022}.
-
-El Modelo en V se compone de tres partes principales:
-
-\begin{itemize}
-    \item \textbf{Rama Descendente (Descomposición y Arquitectura)}
-
-
-    El modelo - opera con un enfoque de arriba hacia abajo (top-down), lo que permite una recolección exhaustiva de requisitos en las fases tempranas. El proceso comienza con un documento de requisitos de ``caja negra`` a nivel general que consolida las necesidades del cliente, los marcos legales y los requerimientos internos. A través de las fases de ``Obtención de Requisitos`` y ``Arquitectura del Sistema``, estas necesidades globales se analizan y descomponen sistemáticamente en requisitos de diseño detallados para cada componente físico o de software.
-
-    \item \textbf{Vértice (Implementación):}
-    
-    Representa la convergencia en la base de la ``V``, definida como la ``Implementación de los Elementos del Sistema``, donde los componentes individuales son desarrollados de acuerdo a las especificaciones derivadas.
-
-    \item \textbf{Rama Ascendente (Integración y Validación):}
-    
-    Consiste en la reconstrucción y prueba del sistema interconectando las actividades a través de múltiples niveles de abstracción. Incluye la ``Integración y Verificación del Sistema``, y culmina con la fase de ``Validación y Transición``. En esta última etapa, el sistema completamente integrado se prueba para comprobar que satisface rigurosamente las necesidades originales de los involucrados (stakeholders) y pasa a la fase de entrega o transición.
-\end{itemize}
-
-
-El Modelo en V es especialmente relevante en el desarrollo de hardware debido a la tendencia moderna de utilizar métodos virtuales en lugar de prototipos físicos en las primeras etapas de desarrollo \parencite{biller_novel_2025}.
-
-    \begin{figure}[H]
-        \centering
-        \caption{Modelo en V (V-Model) 
-        \label{fig-v-model}}  
-
-        \includegraphics[width=8.0 cm]{src/imgs/v-model.jpg}
-        
-        \vspace{0.1cm}
-        \small Tomado de \parencite{biller_novel_2025}\
-    %\isPreprints{\centering}{} % Only used for preprints
-    \end{figure}
-\end{subsectext}
-\end{sectext}
+            \end{subsectext}
+    \end{sectext}
 
 \section{Modelo Aplicativo}
-\begin{sectext}
-El modelo aplicativo describe de manera secuencial los pasos que seguirá el escrito para lograr los Objetivos de la Investigación. En la presente se realiza el uso del Modelo V de Desarrollo (V-Model) en compañía de la Matriz de Trazabilidad de Requerimientos planteada en el TRL 3 de la investigación anterior. La elección metodológica se respalda en la necesidad de que cada módulo de hardware y/o software esté directamente asociado a un requerimiento.
+    \begin{sectext}
+        Delimita el paso del modelo teórico al modelo aplicativo (de la teoría a la realidad)
 
-\begin{itemize}
-    \item \textbf{Rama Descendente del Modelo (Fase de Verificación y Diseño)}
-    
-    Esta fase constituye como las necesidades del usuario: Dificultad para visualizar anatomías complejas en entornos 2D, se traducen a especificaciones técnicas de diseño.
+        Flujograma desde el cual el tesista lleva toda la teoría a la práctica. Esto a través de una serie de pasos estructurados.
 
-    \begin{itemize}
-        \item Definición de Requerimientos (Requirement Gathering)
-        
-        El punto de partida de la investigación se da con la consolidación de la Matriz de Trazabilidad de Requerimientos. Aquí establecemos las necesidades del usuario (médico/cirujano) para el análisis pre-operatorio: Disponer de una percepción tridimensional realista de la columna lumbar (REQ-001), una visualización fluida de la representación 3D (REQ-002), etc. (Tab~\ref{tab-matriz-trazabilidad-requerimientos}).
+        \begin{figure}[H]
+            \centering
+            %\isPreprints{\centering}{} % Only used for preprints
+            \caption{Estructura del modelo aplicativo.
+            \label{fig-estructura-antecedentes}}    
+                
+            \includegraphics[width=10.0 cm]{src/imgs/modelo-aplicativo.png}
 
-        \item Análisis y Arquitectura del Sistema (System Analysis)
-        
-        Los requerimientos de los usuarios se traducen en especificaciones técnicas de diseño. En esta fase la Matriz debe considerar las métricas que el sistema tendrá que cumplir, tales como: frecuencia volumétrica de al menos 30Hz (REQ-002), o un factor de seguridad estructural $>$ 2.5 (REQ-004).
+            \vspace{0.1cm}
+            % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+        \end{figure}
 
-        \item Diseño Detallado (Software Design \& Module Design)
-        
-        Se determina la arquitectura que necesitará el prototipo de pantalla volumétrica de barrido rotacional. El sistema general se descompone en módulos asociados a cada requerimiento: Módulo Estructural, Módulo de LEDs, Módulo de Control (posicionamiento de los vóxeles), Módulo de Reconstrucción Tridimensional, etc.
-        
-
-    \end{itemize}
-
-    \item \textbf{Vértice del Modelo (Fase de Implementación)}
-    
-    En esta parte se lleva a cabo la construcción física del prototipo en un entorno de laboratorio (TRL 4). En esta parte se deberán construir los módulos especificados en la sección anterior en relación a las métricas establecidas para cada uno de ellos.
-
-    \item \textbf{Rama Ascendente del Modelo (Fase de Integración y Validación)}
-    
-    En esta fase se integrarán los módulos del sistema y validarán los apartados de hardware y software en base a las métricas establecidas.
-
-    \begin{itemize}
-        \item Pruebas Unitarias y de Integración (Unit \& Integration Testing)
-        
-        Se evalúa cada módulo por separado y la integración final de los mismos: Pruebas del Factor de seguridad estructural (REQ-004), pruebas de error de fase (REQ-005), Pruebas de estabilidad de frecuencia (REQ-002).
-
-        \item Pruebas de Sistema (System Testing)
-        
-        Se evalúa el funcionamiento del sistema frente a la carga de una Tomografía Computarizada real. Se corroboran aspectos adicionales como la calibración de la isometría (REQ-003), así como la validación de umbralización (REQ-007)
-    
-        \item Pruebas de Aceptación y Validación (Acceptance Testing)
-        
-        En esta parte se medirá y validará el objetivo de la investigación: La representación tridimensional es anatómicamente adecuada para su utilización en el entrenamiento y análisis preoperatorios. En esta fase se determinará el Índice de Sorens Dice > 0.9 (REQ-006).
-        
-    \end{itemize}
-\end{itemize}
-
-\begin{table}[H] 
-    \centering
-    \small % Reducir un punto el tamaño ayuda a la legibilidad en matrices densas
-    \renewcommand{\arraystretch}{1.3} % Espacio vertical equilibrado entre filas
-    
-    \caption{Matriz de Trazabilidad de Requerimientos}
-    \label{tab-matriz-trazabilidad-requerimientos}
-    
-    % Ahora son 5 columnas en total: una fija para el ID y 4 automáticas centradas
-    \begin{tabularx}{\textwidth}{
-        >{\centering\arraybackslash\bfseries}p{1.5cm} 
-        >{\centering\arraybackslash}X 
-        >{\centering\arraybackslash}X 
-        >{\centering\arraybackslash}X 
-        >{\centering\arraybackslash}X 
-    }
-        \toprule
-        \textbf{ID Req.} & \textbf{Necesidades del usuario} & \textbf{Especificación técnica} & \textbf{Módulo de Hw/Sw} & \textbf{Método de verificación} \\
-        \midrule
-        
-        REQ-001 & Percepción tridimensional realista & Resolución volumétrica ($\text{vóxel}\cdot\text{cm}^3$) & Módulo de LEDs y microcontrolador & Análisis de Densidad \\
-        \addlinespace
-        
-        REQ-002 & Visualización fluida del espectro & Frecuencia de barrido constante $>30\text{ Hz}$ & Motor, algoritmo de Tasa de Actualización de Vóxeles & Estabilidad de Frecuencia \\
-        \addlinespace
-        
-        REQ-003 & Relación de aspecto & Isotropía volumétrica $< \pm 0.5\text{ mm}$ & Microcontrolador, algoritmo de coordenadas, Tasa de actualización de vóxeles & Calibración de isometría \\
-        \addlinespace
-        
-        REQ-004 & Seguridad del prototipo & Factor de seguridad estructural $F_e > 2.5$ en velocidad nominal & Estructura mecánica de soporte & Simulación de Método de Elementos Finitos \\
-        \addlinespace
-        
-        REQ-005 & Precisión de la proyección sin distorsión & Desviación angular $< 0.15^\circ$ & Módulo de posicionamiento de cada vóxel & Prueba de error de fase \\
-        \addlinespace
-        
-        REQ-006 & Fidelidad en la reconstrucción anatómica & Coeficiente de Dice $> 0.90$ & Módulo de reconstrucción tridimensional & Índice de Sorense-Dice \\
-        \addlinespace
-        
-        REQ-007 & Control de la segmentación & Unidades Hounsfield personalizable: $\langle -200; 2000 \rangle$ & Módulo de configuración de Unidades Hounsfield & Validación por umbralización \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
-\end{sectext}
+    \end{sectext}
 
 \section{Marco Conceptual}
-\begin{sectext}
-\begin{itemize}
-\item \textbf{Cirugía Guiada por Imágenes (IGS)}: Sistemas utilizados en el quirófano que integran imágenes preoperatorias con el rastreo de instrumentos en tiempo real, permitiendo al cirujano navegar con alta precisión \parencite{arensmeyer_system_2024}.
+    \begin{sectext}
+        Es un glosario u diccionario en el cual incluimos los términos que necesitamos definir, pero que no son tan relevantes como para considerar en el marco teórico. De preferencia siempre usar citas parentéticas.
 
-\item \textbf{Conflicto de Vergencia-Acomodación (VAC)}: Contradicción fisiológica que causa fatiga visual cuando los ojos convergen en un objeto 3D virtual pero deben enfocar físicamente (acomodación) a la distancia fija de una pantalla 2D convencional \parencite{blundell_uncertain_2017}.
+        Debemos considerar entre 15 a 20 términos. y cada definición debe tener de entre 2 a 3 líneas. Los términos no deben estar enumerados, pero sí ordenados alfabéticamente.
 
-\item \textbf{Endoscopia Virtual}: Técnica interactiva que simula la vista de un endoscopio físico real, colocando y navegando una cámara virtual dentro de las cavidades u órganos tubulares escaneados en 3D \parencite{sarmah_survey_2023}.
+        \begin{itemize}
+        \item \textbf{Conflicto de Vergencia-Acomodación (VAC)}: Contradicción fisiológica que causa fatiga visual cuando los ojos convergen en un objeto 3D virtual pero deben enfocar físicamente (acomodación) a la distancia fija de una pantalla 2D convencional \parencite{blundell_uncertain_2017}.
 
-\item \textbf{Formato DICOM}: Estándar predominante en imágenes médicas que, además de la matriz de píxeles, encapsula metadatos esenciales sobre el escaneo y el paciente, permitiendo que la imagen sea autodescriptiva y útil para modelado \parencite{sarmah_survey_2023}.
+        \item \textbf{Pantallas de volumen barrido (Swept-volume)}: Dispositivos volumétricos que crean el espacio de visualización mediante el movimiento mecánico rápido y cíclico (ya sea rotacional o de traslación) de una superficie de proyección \parencite{blundell_classification_2002}.
+        
+        \item \textbf{Technology Readiness Level (TRL)}: Escala de nueve niveles creada inicialmente por la NASA para evaluar la madurez, el riesgo y el avance de una nueva tecnología desde su concepción hasta su despliegue operativo \parencite{salazar_zegarra_taxonomitecnicas_2022}.
 
-\item \textbf{Función de Transferencia}: Herramienta matemática empleada en el renderizado volumétrico que mapea los valores escalares de los datos médicos (ej. densidad) a propiedades visuales de color y opacidad \parencite{sarmah_survey_2023}.
-
-\item \textbf{Marching Cubes}: Algoritmo matemático empleado en la reconstrucción 3D que genera mallas poligonales de alta resolución a partir de volúmenes de datos discretos (como tomografías), utilizando un isovalor definido \parencite{sarmah_survey_2023}.
-
-\item \textbf{Modelos de Columna Impresos en 3D}: Réplicas físicas de tamaño real fabricadas a partir de imágenes de TC de pacientes, permitiendo a los cirujanos novatos practicar intervenciones complejas en un entorno controlado \parencite{calle-diaz_metodologias_2021}.
-
-\item \textbf{Navegación Quirúrgica por AR/MR}: Integración de la Realidad Aumentada en el quirófano para superponer información 3D preoperatoria (como tumores ocultos o guías de perforación espinal) directamente sobre el campo visual anatómico del cirujano \parencite{arensmeyer_system_2024}.
-
-\item \textbf{Pantallas de volumen barrido (Swept-volume)}: Dispositivos volumétricos que crean el espacio de visualización mediante el movimiento mecánico rápido y cíclico (ya sea rotacional o de traslación) de una superficie de proyección \parencite{blundell_classification_2002}.
-
-\item \textbf{Pantallas volumétricas}: Sistemas de visualización 3D autoestereoscópica que generan imágenes directamente dentro de un volumen físico transparente, permitiendo a múltiples observadores percibir la profundidad de forma natural sin usar gafas especiales \parencite{salazar_zegarra_taxonomitecnicas_2022}.
-
-\item \textbf{Proyección Volumétrica}: Técnica de visualización que genera objetos tridimensionales flotantes mediante la rápida proyección de cortes bidimensionales en el espacio, prescindiendo del uso de lentes de realidad virtual o aumentada \parencite{blundell_volumetric_1993}.
-
-\item \textbf{Realidad Extendida (XR)}: Término general para el espectro de tecnologías inmersivas que desdibujan la línea entre lo físico y lo digital, abarcando la Realidad Virtual (VR), la Realidad Aumentada (AR) y la Realidad Mixta (MR) \parencite{bakhuis_essential_2023}.
-
-\item \textbf{Realidad Mixta (RM) / Aumentada en Cirugía}: Uso de visores montados en la cabeza (HMD) que superponen hologramas de la anatomía del paciente y guían en tiempo real las trayectorias de los instrumentos quirúrgicos \parencite{petrella_assessment_2024}.
-
-\item \textbf{Registro de Imágenes}: Proceso computacional de alinear y transformar múltiples imágenes (de distintas modalidades o diferentes tiempos) en un sistema de coordenadas espales común para fusionarlas \parencite{sarmah_survey_2023}.
-
-\item \textbf{Segmentación de Imágenes}: Proceso computacional de identificar, delimitar y asignar etiquetas a estructuras anatómicas o patológicas específicas (como un tumor) dentro de un conjunto de datos médicos \parencite{sarmah_survey_2023}.
-
-\item \textbf{Technology Readiness Level (TRL)}: Escala de nueve niveles creada inicialmente por la NASA para evaluar la madurez, el riesgo y el avance de una nueva tecnología desde su concepción hasta su despliegue operativo \parencite{salazar_zegarra_taxonomitecnicas_2022}.
-
-\item \textbf{Visualización Médica}: Uso de técnicas de gráficos por computadora para crear representaciones visuales interactivas de datos médicos, con el fin de amplificar la cognición humana en el diagnóstico y planificación \parencite{chessa_three-dimensional_2022}.
-
-\item \textbf{Vóxel}: Es el equivalente tridimensional de un píxel; consiste en una región o elemento de volumen localizado que emite, refleja o absorbe la luz para conformar una imagen gráfica sólida en el espacio \parencite{blundell_classification_2002}.
-\end{itemize}
-\end{sectext}
+        \item \textbf{Vóxel}: Es el equivalente tridimensional de un píxel; consiste en una región o elemento de volumen localizado que emite, refleja o absorbe la luz para conformar una imagen gráfica sólida en el espacio \parencite{blundell_classification_2002}.
+        \end{itemize}
+    \end{sectext}
 
 \chapter{Justificación}
-\section{Justificación Teórica}
-\begin{sectext}
-    La presente investigación se consolida al establecer la base del mismo en un conjunto de teorías en distintos ámbitos de conocimiento; siendo en el ámbito clínico el de considerar al uso de simulaciones una necesidad escencial en la planificación pre-operatoria \parencite{calle-diaz_metodologias_2021}, sumado a la evidencia de que las tecnologías 3D brindan mayores alcances a los estudiantes y se consolida como un método de enseñanza predilecto \parencite{sarmah_survey_2023,calle-diaz_metodologias_2021}; en el ámbito de visualización médica, se valida al contemplar la visión de \cite{mccormick_visualization_1991} sobre que ``el propósito de la visualización es la percepción, no las imágenes``; en el ámbito de la salud pública y general de la población, al enmarcarse con la zona anatómica, columna lumbar, cuya patología más común, lumbalgia, es la principal causa de discapacidad en todo el mundo \parencite{noauthor_lumbalgia_2023} y en el ámbito volumétrico al establecer un entorno en el cual la utilización de pantallas volumétricas muestre beneficios técnicos claros para el consumidor \parencite{blundell_uncertain_2017}.
+Realizar la justificación de la investigación para una tesis debe realizarse desde 5 perspectivas:
 
-\end{sectext}
+\begin{itemize}
+    \item \textbf{Justificación Teórica:} Validar, utilizar, cuestionar (Valida teoría)
+    \item \textbf{Justificación Práctica:} Hablar de (Resuelve el problema)
+    \item \textbf{Justificación Metodológica:} Recrear (Utilizar una metdología existente, llevarlo a otro lugar y ajustarlo u adaptarlo a las necesidades de ese nuevo entorno) Replicar (Copiar y pegar el modelo a otra zona sin considerar el contexto). Presenta a la comunidad académica un modelo aplicativo que es una forma de resolver problemas de tales u cuáles naturalezas, el mismo que puede ser recreado en otras investigaciones.
+    \item \textbf{Justificación Social:} Tiene que estar enmarcado dentro de las ODS, Responsabilidad Social Univesitaria y los Ejes estrátegicos del plan nacional al 2050. (Genera una impacto en la organización u la empresa)
+    \item \textbf{Justificación Económica:} Impacto de nuestra investigación sobre la competitividad, economía de la organización. No se necesario que sea numérico; En términos generales debemos explicar que a través de nuestra tesis se logrará la estabilidad de la organización, la competititvidad de la empresa, se va a asegurar las sostenibilidad en el etiempo de la empresa en el sector u negocio en el cual estamos trabajando.
+\end{itemize}
+
+Unas 6 líneas por cada justificación es lo ideal. Las siguientes secciones incluyen un inicio de la justificación, esto es un ejemplo de cómo realicé la justificación de mi trabajo, pero cada trabajo de tesis es especial y único.
+
+\section{Justificación Teórica}
+    \begin{sectext}
+        La presente investigación se consolida al establecer la base del mismo en un conjunto de teorías en distintos ámbitos de conocimiento;...
+    \end{sectext}
 
 \section{Justificación Metodológica}
-\begin{sectext}
-    La presente investigación se enmarca al uso de 2 métodos consolidados en el ámbito de la creación e invención tecnológica en materia de hardware y software \parencite{regan_investigation_2013,robertson_mastering_2012,biller_novel_2025,gross_development_2022}. La utilización de la Matriz de Trazabilidad de Requerimientos y el Modelo V de Desarrollo, junto a la contextualización del proyecto dada por su posicionamiento en el TRL-4 posiconan a la investigación como un trabajo serio y con un marco de trabajo riguroso.
-\end{sectext}
+    \begin{sectext}
+        La presente investigación se enmarca al uso de 2 métodos consolidados en el ámbito de la creación e invención tecnológica en materia de hardware y software...
+    \end{sectext}
 
 \section{Justificación Práctica}
-\begin{sectext}
-    La presente investigación se centra en la superación de la carente percepción volumétrica y espacial que presentan los médicos frente a las estructuras anatómicas de columna lumbar en las etapas pre-operatorias. A pesar de que existan múltiples métodos de adquisición de información médica en 3D (Angiografías, Tomografías Computarizadas, Resonancias Magnéticas), todas ven ofuscadas su representación tridimensional al solo poder ser analizadas por medio de pantallas planas bidimensionales (2D).
-
-\end{sectext}
+    \begin{sectext}
+        La presente investigación se centra en la superación de la carente...
+    \end{sectext}
 
 \section{Justificación Social}
-\begin{sectext}
-    La presente investigación enmarca su desarrollo sobre los Objetivos de Desarrollo Sostenible 3 (Salud y Bienestar) y 9 (Industria, innovación e infraestructuras) debido a sus implicancias en el ámbito médico por medio del ámbito ingenieril. Por su parte, respecto a la Responsabilidad Social Universitaria, la investigación abarca el área de Intervención Tecnológica debido a la disposición de la investigación a proponer y ejecutar tecnologías en favor de problemas sociales de la comunidad. A su vez, respecto al Plan Estatrégico de Desarrollo Nacional al 2050, la investigación toma especial énfasis en el ON3. Competitividad e Innovación, siendo el OE 3.5 Elevar la capacidad científica y de innovación tecnológica del país el objetivo al cual la investigación se alinea con mayor relevancia.
-
-\end{sectext}
+    \begin{sectext}
+        La presente investigación enmarca su desarrollo sobre los Objetivos de Desarrollo Sostenible 3 (Salud y Bienestar) y 9 (Industria, innovación e infraestructuras) debido a sus implicancias en el ámbito médico por medio del ámbito ingenieril. Por su parte, respecto a la Responsabilidad Social Universitaria, la investigación abarca el área de Intervención Tecnológica debido a la disposición de la investigación a proponer y ejecutar tecnologías en favor de problemas sociales de la comunidad. A su vez, respecto al Plan Estatrégico de Desarrollo Nacional al 2050, la investigación toma especial énfasis en el ON3. Competitividad e Innovación, siendo el OE 3.5 Elevar la capacidad científica y de innovación tecnológica del país el objetivo al cual la investigación se alinea con mayor relevancia.
+    \end{sectext}
 
 \section{Justificación Económica}
-\begin{sectext}
-    La presente investigación busca mejorar la capacidad de análisis del personal médico encargado del análisis anatómico de columna lumbar en el ámbito pre-operatorio; por tanto, se enmarca en garantizar la competitividad del sistema sanitario y aprovechamiento de los métodos de extracción de información tridimensional al dotar una tecnología que aproveche la realidad inherentemente espacial que posee la anatomía humana \parencite{chessa_three-dimensional_2022}. A su vez, maneja la sostenibilidad y modernización del campo sanitario al alinear la ingeniería con las necesidades de simulación en la capacitación médica \parencite{calle-diaz_metodologias_2021}.
-\end{sectext}
+    \begin{sectext}
+        La presente investigación busca mejorar la capacidad de análisis del...
+    \end{sectext}
 
 \chapter{Hipótesis}
+La hipótesis es la respuesta al problema de la investigación. La hipótesis, al igual que el problema y los objetivos se describen en tiempo presente. Siempre debemos intentar hacer que las relaciones sean positivas (Directamente), no negativas (Inversamente)
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Hipótesis
+        \label{fig-modelo-hipótesis}}    
+                
+        \includegraphics[width=7.0 cm]{src/imgs/hipótesis.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Relación Inversa hasta la Hipótesis
+        \label{fig-relacion-inversa-hipótesis}}    
+                
+        \includegraphics[width=11.0 cm]{src/imgs/relacion-inversa-hipotesis.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+
 \section{Hipótesis General}
-\begin{sectext}
-    El sistema de visualización volumétrica permite la planificación y análisis pre-operatorio de patologías lumbares.
-\end{sectext}
+    \begin{sectext}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    \end{sectext}
 
 \section{Hipótesis Específicas}
-\begin{sectext}
-    \begin{itemize}
-        \item Las métricas de la Matriz de Trazabilidad de Requerimientos permite la creación de una pantalla volumétrica de barrido rotacional
-        \item Las métricas de la Matriz de Trazabilidad de Requerimientos permite la recreación tridimnesional de columna lumbar mediante TCs. 
-    \end{itemize}
-\end{sectext}
+    \begin{sectext}
+        \begin{itemize}
+            \item Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            \item Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        \end{itemize}
+    \end{sectext}
 
 \chapter{Operacionalización de Variables}
-\begin{table}[H] 
-    \centering
-    \small 
-    \renewcommand{\arraystretch}{1.4} % Espacio vertical equilibrado para lectura fluida
-    
-    \caption{Matriz de Operacionalización de Variables}
-    \label{tab-matriz-operacionalizacion-variables}
-    
-    \begin{tabularx}{\textwidth}{
-        >{\raggedright\arraybackslash\bfseries}p{2.5cm} 
-        >{\raggedright\arraybackslash}X 
-        >{\raggedright\arraybackslash}p{3cm} 
-        >{\raggedright\arraybackslash}p{3.5cm}
-    }
-        \toprule
-        \textbf{Variable} & \textbf{Definición Conceptual} & \textbf{Dimensiones} & \textbf{Indicadores} \\
-        \midrule
-        
-        \textbf{Variable Independiente (VI):} \newline Pantalla Volumétrica de Barrido Rotacional & 
-        Pantalla autoestereoscópica que posiciona cada vóxel en un punto del espacio por medio del barrido de una plataforma plana a lo largo de todo un volumen de manera rotacional \parencite{salazar_zegarra_taxonomitecnicas_2022,blundell_classification_2002}. & 
-        Rendimiento Técnico del Hardware & 
-        - Frecuencia volumétrica ($V_s$ en Hz).\newline 
-        - Densidad de vóxeles ($Vx/mm^3$).\newline 
-        - Isotropía dimensional del vóxel. \\
-        \cmidrule{3-4}
-        & & Integración de Software & 
-        - Tiempo de renderizado (*Marching Cubes*).\newline 
-        - Tasa de refresco de frames (FPS).\newline 
-        - Fidelidad de la reconstrucción tridimensional (Índice de Sorense Dice). \\
-        \midrule
-        
-        \textbf{Variable Dependiente (VD):} \newline Asistencia en el Diagnóstico Radiológico 3D & 
-        Disciplina científica de la imagenología médica que mediante el uso de técnicas y metodologías especializadas permiten la detección y evaluación de enfermedades o patologías \parencite{macdonald_radiological_2019,alkharsawi_cement_2022}. & 
-        Percepción Espacial Clínica & 
-        - Tiempo de inspección diagnóstica (segundos).\newline 
-        - Precisión en localización de patologías (hernias, estenosis). \\
-        \cmidrule{3-4}
-        & & Carga Cognitiva del Usuario & 
-        - Índice de carga de trabajo mental (Escala NASA-TLX).\newline 
-        - Nivel de frustración clínica.\newline 
-        - Nivel de fatiga visual percibida. \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+
+En una investigación científica, las variables son los elementos que permiten medir u observar los conceptos u fenómenos que estamos estudiando en una investigación. De manera exacta, podemos definir a una variable como cualquier característica que puede ser \textbf{medida, observar, manipular u controlar} en una experimentación u observación.
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Tipos y características de una variable
+        \label{fig-tipos-caracteristicas-variables}}    
+                
+        \includegraphics[width=10.0 cm]{src/imgs/tipos-variables.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Ejemplo 1 - de Operacionalización de variables
+        \label{fig-relacion-inversa-hipótesis}}    
+                
+        \includegraphics[width=10.0 cm]{src/imgs/operacionalizacion-variables-1.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+
+        \begin{figure}[H]
+        \centering
+        %\isPreprints{\centering}{} % Only used for preprints
+        \caption{Ejemplo 2 - de Operacionalización de variables
+        \label{fig-relacion-inversa-hipótesis}}    
+                
+        \includegraphics[width=10.0 cm]{src/imgs/operacionalizacion-variables-2.png}
+
+        \vspace{0.1cm}
+        % \small EN CASO DE SER BAJO ELABORACIÓN PROPIA, NO HACE FALTA AGREGAR LA NOTA
+    \end{figure}
+
+La definición conceptual a preferencia debe venir de teóricos (en lugar de solo autores de investigaciones).
+Las dimensiones e indicadores debe salir de la teoría (De allí saldrá todo, puedes encontrarlo en otros lugares, pero a preferencia). En algunos casos también se utiliza la definición operacional. Esto será su valor matemático o algo así.
+
+Ejemplo:
+\begin{itemize}
+    \item \textbf{Rentabilidad:}
+    \begin{itemize}
+        \item \textbf{De manera conceptual:} Es la utilidad u gannacia que tiene una empresa respecto a sus operaciones
+        \item \textbf{De manera operacional:} Es la diferencia entre los ingresos  y egresos (gastos), siendo su fórmula: I - E
+    \end{itemize}
+\end{itemize}
 
 
 \chapter{Metodología de la Investigación}
 \section{Tipo de Investigación}
-\begin{sectext}
+    \begin{sectext}
 
-    El tipo de investigación enmarca la idea del qué hacer y qué información necesito para lograr ese objetivo. Cada tipo de investigación conlleva una secuencia estructurada de fases y operaciones. Según \textcite{carrasco_dias_metodologia_2005}, existen 4 tipos de investigación: Investigación básica, donde se busca ampliar el conocimiento científico existente acerca de una realidad, el objetivo de este tipo de investigaciones recae sobre las teorías científicas; Investigación Aplicada, donde se buscan resultados prácticos e inmediatos por medio de actuar, transformar o modificar una parte de la realidad en estudio; Investigación Sustantiva, donde se busca responder a interrogantes concretas en favor de la consolidación de las teorías científicas y la aplicación de las investigaciones aplicadas y tecnológicas; por último, la Investigación Tecnológica busca perfeccionar u manipular un sector de la realidad en estudio mediante la aplicación de nuevos sistemas, modelos u técnicas.
+        El tipo de investigación enmarca la idea del qué hacer y qué información necesito para lograr ese objetivo. Cada tipo de investigación conlleva una secuencia estructurada de fases y operaciones. Según \textcite{carrasco_dias_metodologia_2005}, existen 4 tipos de investigación: Investigación básica, donde se busca ampliar el conocimiento científico existente acerca de una realidad, el objetivo de este tipo de investigaciones recae sobre las teorías científicas; Investigación Aplicada, donde se buscan resultados prácticos e inmediatos por medio de actuar, transformar o modificar una parte de la realidad en estudio; Investigación Sustantiva, donde se busca responder a interrogantes concretas en favor de la consolidación de las teorías científicas y la aplicación de las investigaciones aplicadas y tecnológicas; por último, la Investigación Tecnológica busca perfeccionar u manipular un sector de la realidad en estudio mediante la aplicación de nuevos sistemas, modelos u técnicas.
 
-    El presente trabajo se enmarca en el tipo de investigación tecnológica debido al objetivo central de realizar una invención tecnológica, una pantalla volumétrica, para inspeccionar los cambios en la realidad de los diagnósticos radiológicos de columna lumbar.
-\end{sectext}
+        El presente trabajo se enmarca en el tipo de investigación tecnológica debido al objetivo central de realizar una invención tecnológica...
+    \end{sectext}
 
 \section{Nivel de la Investigación}
-\begin{sectext}
-    El nivel de la investigación establece la profundidad que tendrá un estudio respecto a la problemática identificada. Según \textcite{carrasco_dias_metodologia_2005}, los niveles de investigación representan el orden secuencial y coherente que deben tener las investigaciones; se catalogan 4 tipos: preliminares o exploratorios, donde se establecen las primeras ideas y conceptos de la realidad a investigar; descriptivos, donde establecemos de manera robusta las propiedades, características, objetos, cualidades, rasgos u fenómenos de la realidad a estudiar; explicativos o causales, donde establecemos las causas u factores que dan origen a las circunstancias y naturaleza del fenómeno en estudio; y experimentales, en el cual se establece un nuevo paradigma, sistema, modelo u tratamiento para intentar corregir la situación problemática de la realidad en estudio.
-    
-    El presente trabajo se enmarca en el nivel de investigación de tipo experimental debido a que se busca entender cómo un nuevo sistema, una pantalla volumétrica, afecta u incide en la forma actual sobre la que se llevan a cabo los diagnósticos de patologías lumbares.
-\end{sectext}
+    \begin{sectext}
+        El nivel de la investigación establece la profundidad que tendrá un estudio respecto a la problemática identificada. Según \textcite{carrasco_dias_metodologia_2005}, los niveles de investigación representan el orden secuencial y coherente que deben tener las investigaciones; se catalogan 4 tipos: preliminares o exploratorios, donde se establecen las primeras ideas y conceptos de la realidad a investigar; descriptivos, donde establecemos de manera robusta las propiedades, características, objetos, cualidades, rasgos u fenómenos de la realidad a estudiar; explicativos o causales, donde establecemos las causas u factores que dan origen a las circunstancias y naturaleza del fenómeno en estudio; y experimentales, en el cual se establece un nuevo paradigma, sistema, modelo u tratamiento para intentar corregir la situación problemática de la realidad en estudio.
+        
+        El presente trabajo se enmarca en el nivel de investigación de tipo experimental debido a que se busca entender cómo un nuevo sistema...
+    \end{sectext}
 
 \chapter{Cronograma}
-\begin{table}[H]
-\caption{Cronograma de actividades estructurado en meses}
-\label{tab:cronograma}
-\begin{tabularx}{\textwidth}{X *{8}{c}}
-\toprule
-\textbf{DETALLES DE ACTIVIDADES} & \multicolumn{8}{c}{\textbf{TIEMPO EN MESES}} \\
-\cmidrule(lr){2-9}
- & \textbf{1°} & \textbf{2°} & \textbf{3°} & \textbf{4°} & \textbf{5°} & \textbf{6°} & \textbf{7°} & \textbf{8°} \\
-\midrule
-Formulación del Proyecto de Investigación. & X &   &   &   &   &   &   &   \\
-\addlinespace
+    \begin{table}[H]
+        \caption{Cronograma de actividades estructurado en meses}
+        \label{tab:cronograma}
+        \begin{tabularx}{\textwidth}{X *{8}{c}}
+            \toprule
+            \textbf{DETALLES DE ACTIVIDADES} & \multicolumn{8}{c}{\textbf{TIEMPO EN MESES}} \\
+            \cmidrule(lr){2-9}
+            & \textbf{1°} & \textbf{2°} & \textbf{3°} & \textbf{4°} & \textbf{5°} & \textbf{6°} & \textbf{7°} & \textbf{8°} \\
+            \midrule
+            Formulación del Proyecto de Investigación. & X &   &   &   &   &   &   &   \\
+            \addlinespace
 
-Elaboración del Proyecto & X & X &   &   &   &   &   &   \\
-\addlinespace
+            Elaboración del Proyecto & X & X &   &   &   &   &   &   \\
+            \addlinespace
 
-Revisión de bibliografía y antecedentes. &   & X & X &   &   &   &   &   \\
-\addlinespace
+            Revisión de bibliografía y antecedentes. &   & X & X &   &   &   &   &   \\
+            \addlinespace
 
-Presentación del Proyecto de investigación &   &   & X &   &   &   &   &   \\
-\addlinespace
+            Presentación del Proyecto de investigación &   &   & X &   &   &   &   &   \\
+            \addlinespace
 
-Inscripción del Proyecto de Investigación &   &   & X &   &   &   &   &   \\
-\addlinespace
+            Inscripción del Proyecto de Investigación &   &   & X &   &   &   &   &   \\
+            \addlinespace
 
-Selección y ordenamiento del cuerpo técnico y científico del problema de estudio. & X & X & X &   &   &   &   &   \\
-\addlinespace
+            Selección y ordenamiento del cuerpo técnico y científico del problema de estudio. & X & X & X &   &   &   &   &   \\
+            \addlinespace
 
-Preparación y elaboración de los instrumentos. &   &   &   & X &   &   &   &   \\
-\addlinespace
+            Preparación y elaboración de los instrumentos. &   &   &   & X &   &   &   &   \\
+            \addlinespace
 
-Aplicación y recolección de datos. &   &   &   &   & X & X &   &   \\
-\addlinespace
+            Aplicación y recolección de datos. &   &   &   &   & X & X &   &   \\
+            \addlinespace
 
-Análisis estadístico de los resultados. &   &   &   &   &   & X &   &   \\
-\addlinespace
+            Análisis estadístico de los resultados. &   &   &   &   &   & X &   &   \\
+            \addlinespace
 
-Interpretación de los resultados &   &   &   &   &   &   & X &   \\
-\addlinespace
+            Interpretación de los resultados &   &   &   &   &   &   & X &   \\
+            \addlinespace
 
-Elaboración de conclusiones &   &   &   &   &   &   & X &   \\
-\addlinespace
+            Elaboración de conclusiones &   &   &   &   &   &   & X &   \\
+            \addlinespace
 
-Presentación del informe &   &   &   &   &   &   &   & X \\
-\addlinespace
+            Presentación del informe &   &   &   &   &   &   &   & X \\
+            \addlinespace
 
-Evaluación y mejoramiento & X & X & X & X & X & X & X & X \\
-\bottomrule
-\end{tabularx}
-\end{table}
+            Evaluación y mejoramiento & X & X & X & X & X & X & X & X \\
+            \bottomrule
+        \end{tabularx}
+    \end{table}
 
 \chapter{Presupuesto}
-\begin{table}[H]
-\caption{Presupuesto estimado para el desarrollo del plan de tesis}
-\label{tab:presupuesto}
-\begin{tabularx}{\textwidth}{X r}
-\toprule
-\textbf{ÍTEM} & \textbf{COSTO (S/.)} \\
-\midrule
-\multicolumn{2}{l}{\textbf{I. MAQUINARIAS Y EQUIPOS}} \\
-\hspace{0.5cm} Laptop & 4000.00 \\
-\hspace{0.5cm} Impresora & 1450.00 \\
-\hspace{0.5cm} Memoria USB & 50.00 \\
-\addlinespace
+    \begin{table}[H]
+        \caption{Presupuesto estimado para el desarrollo del plan de tesis}
+        \label{tab:presupuesto}
 
-\multicolumn{2}{l}{\textbf{II. RECURSOS HUMANOS}} \\
-\hspace{0.5cm} Servicios Profesionales & 18000.00 \\
-\hspace{0.5cm} Asesoría & 5000.00 \\
-\addlinespace
+        \begin{tabularx}{\textwidth}{X r}
+            \toprule
+            \textbf{ÍTEM} & \textbf{COSTO (S/.)} \\
+            \midrule
+            \multicolumn{2}{l}{\textbf{I. MAQUINARIAS Y EQUIPOS}} \\
+            \hspace{0.5cm} Laptop & 4000.00 \\
+            \hspace{0.5cm} Impresora & 1450.00 \\
+            \hspace{0.5cm} Memoria USB & 50.00 \\
+            \addlinespace
 
-\multicolumn{2}{l}{\textbf{III. ÚTILES DE ESCRITORIO}} \\
-\hspace{0.5cm} Útiles diversos & 2500.00 \\
-\addlinespace
+            \multicolumn{2}{l}{\textbf{II. RECURSOS HUMANOS}} \\
+            \hspace{0.5cm} Servicios Profesionales & 18000.00 \\
+            \hspace{0.5cm} Asesoría & 5000.00 \\
+            \addlinespace
 
-\multicolumn{2}{l}{\textbf{IV. IMPREVISTOS}} \\
-\hspace{0.5cm} Otros gastos & 5920.00 \\
-\midrule
-\textbf{TOTAL} & \textbf{S/. 36920.00} \\
-\bottomrule
-\end{tabularx}
-\end{table}
-% \section{Justificación}
-% \begin{itemize}
-%     \item Justificación Teórica
-%     \item Justificación Práctica
-%     \item Justificación Metodológica
-%     \item Justificación Social
-% \end{itemize}
+            \multicolumn{2}{l}{\textbf{III. ÚTILES DE ESCRITORIO}} \\
+            \hspace{0.5cm} Útiles diversos & 2500.00 \\
+            \addlinespace
 
-% \section{Hipótesis}
-% \subsection{Hipótesis General}
-% \subsection{Hipótesis Específicas}
-
-% \chapter{REFERENCE FRAMEWORK}
-% \section{Research Background}
-% Background...
-% \section{Theoretical Framework}
-% Theoretical bases...
-
-% \chapter{METHODOLOGICAL INTERVENTION}
-% \section{Planning}
-% Development of the methodology...
-
-% \chapter{ANALYSIS AND DISCUSSION OF RESULTS}
-% \section{Results Analysis}
-% Presentation of obtained results...
-
-% \chapter*{CONCLUSIONS}
-% \addcontentsline{toc}{chapter}{CONCLUSIONS}
-% Conclusions of the research...
+            \multicolumn{2}{l}{\textbf{IV. IMPREVISTOS}} \\
+            \hspace{0.5cm} Otros gastos & 5920.00 \\
+            \midrule
+            \textbf{TOTAL} & \textbf{S/. 36920.00} \\
+            \bottomrule
+        \end{tabularx}
+    \end{table}
 
 \chapter{Referencias Bibliográficas}
 \printbibliography[heading=none]
-% \addcontentsline{toc}{chapter}{RECOMMENDATIONS}
-% Recommendations...
 
-% 5. Referencias
+% -- REFERENCIAS --
 \addcontentsline{toc}{chapter}{REFERENCES}
-% \bibitem{ref1} Lastname, F. (Year). \textit{Book Title}. Publisher.
-% \printbibliography[title={REFERENCIAS}, heading=bibintoc]
-
-% \chapter*{APPENDICES}
-% \addcontentsline{toc}{chapter}{APPENDICES}
-% Insert your appendices here.
 
 % \chapter{Apéndices}
 % \chapter{Anexos}

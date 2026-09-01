@@ -66,7 +66,6 @@
 \newcommand{\degree}[1]{\def\@degree{#1}}
 \newcommand{\city}[1]{\def\@city{#1}}
 \newcommand{\thesisyear}[1]{\def\@thesisyear{#1}}
-\newcommand{\advisor}[1]{\def\@advisor{#1}}
 
 % --- MANEJO DINÁMICO DE MÚLTIPLES AUTORES ---
 \newcommand{\@authorslist}{}
@@ -102,7 +101,7 @@
         % IMPRESIÓN DINÁMICA DE AUTORES
         \@authorslist
 
-        \vspace{1.5cm}
+        \vspace{1.0cm}
         {\fontsize{14pt}{16pt}\selectfont\bfseries PARA OPTAR EL TÍTULO PROFESIONAL DE:\par}
         \vspace{0.3cm}
         {\fontsize{14pt}{16pt}\selectfont \MakeUppercase{\@degree}\par}
